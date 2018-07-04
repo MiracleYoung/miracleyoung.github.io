@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Dairy 20180617 | Miracle Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Daily 学习《Python Data Structure》4.1-4.10。掌握了递归的基本用法。 早上对媳妇有点不满，不太好，心胸开阔一些，与人为善一点。  Tech递归 计算整数列表和 阿西莫夫机器人。及在递归中的表现。 递归算法必须是有基本情况 =&amp;gt; 退出条件 递归算法必须改变其状态，并向基本情况靠近 =&amp;gt; 数据在变小 递归算法必须以递归方式调用自身    数据转换字符串 在">
+  <meta name="description" content="学习《Python Data Structure》4.1-4.10。掌握了递归的基本用法。 早上对媳妇有点不满，不太好，心胸开阔一些，与人为善一点。  Tech递归 计算整数列表和 阿西莫夫机器人。及在递归中的表现。 递归算法必须是有基本情况 =&amp;gt; 退出条件 递归算法必须改变其状态，并向基本情况靠近 =&amp;gt; 数据在变小 递归算法必须以递归方式调用自身    数据转换字符串 在pytho">
 <meta name="keywords" content="Dairy">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Dairy 20180617">
 <meta property="og:url" content="http://yoursite.com/Diary/2018/Jun/20180617/index.html">
 <meta property="og:site_name" content="Miracle Blog">
-<meta property="og:description" content="Daily 学习《Python Data Structure》4.1-4.10。掌握了递归的基本用法。 早上对媳妇有点不满，不太好，心胸开阔一些，与人为善一点。  Tech递归 计算整数列表和 阿西莫夫机器人。及在递归中的表现。 递归算法必须是有基本情况 =&amp;gt; 退出条件 递归算法必须改变其状态，并向基本情况靠近 =&amp;gt; 数据在变小 递归算法必须以递归方式调用自身    数据转换字符串 在">
+<meta property="og:description" content="学习《Python Data Structure》4.1-4.10。掌握了递归的基本用法。 早上对媳妇有点不满，不太好，心胸开阔一些，与人为善一点。  Tech递归 计算整数列表和 阿西莫夫机器人。及在递归中的表现。 递归算法必须是有基本情况 =&amp;gt; 退出条件 递归算法必须改变其状态，并向基本情况靠近 =&amp;gt; 数据在变小 递归算法必须以递归方式调用自身    数据转换字符串 在pytho">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-07-04T02:53:21.653Z">
+<meta property="og:updated_time" content="2018-07-04T03:17:54.064Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Dairy 20180617">
-<meta name="twitter:description" content="Daily 学习《Python Data Structure》4.1-4.10。掌握了递归的基本用法。 早上对媳妇有点不满，不太好，心胸开阔一些，与人为善一点。  Tech递归 计算整数列表和 阿西莫夫机器人。及在递归中的表现。 递归算法必须是有基本情况 =&amp;gt; 退出条件 递归算法必须改变其状态，并向基本情况靠近 =&amp;gt; 数据在变小 递归算法必须以递归方式调用自身    数据转换字符串 在">
+<meta name="twitter:description" content="学习《Python Data Structure》4.1-4.10。掌握了递归的基本用法。 早上对媳妇有点不满，不太好，心胸开阔一些，与人为善一点。  Tech递归 计算整数列表和 阿西莫夫机器人。及在递归中的表现。 递归算法必须是有基本情况 =&amp;gt; 退出条件 递归算法必须改变其状态，并向基本情况靠近 =&amp;gt; 数据在变小 递归算法必须以递归方式调用自身    数据转换字符串 在pytho">
   
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
@@ -179,7 +179,7 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Daily"><a href="#Daily" class="headerlink" title="Daily"></a>Daily</h2><ul>
+        <ul>
 <li>学习《Python Data Structure》4.1-4.10。掌握了递归的基本用法。</li>
 <li>早上对媳妇有点不满，不太好，心胸开阔一些，与人为善一点。</li>
 </ul>
@@ -213,6 +213,37 @@ var _hmt = _hmt || [];
 <h3 id="汉诺塔游戏"><a href="#汉诺塔游戏" class="headerlink" title="汉诺塔游戏"></a>汉诺塔游戏</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">tower</span><span class="params">(height, from, to, with)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> height &gt;= <span class="number">1</span>:</span><br><span class="line">        tower(height - <span class="number">1</span>, <span class="keyword">from</span> , <span class="keyword">with</span>, to)</span><br><span class="line">        move_disk(<span class="keyword">from</span>, to)</span><br><span class="line">        tower(height - <span class="number">1</span>, <span class="keyword">from</span> , to, <span class="keyword">with</span>)</span><br></pre></td></tr></table></figure>
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.jpeg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/wxpay.jpeg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -357,6 +388,22 @@ var _hmt = _hmt || [];
   
 
   
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "http://yoursite.com/Diary/2018/Jun/20180617/",
+  owner: 'miracleyoung0723@gmail.com',
+  repo: 'https://github.com/MiracleYoung/miracleyoung.github.io',
+  oauth: {
+    client_id: '8681ad25509ec2d7cd7c',
+    client_secret: 'eb83cb588b830be54a44e7e99fcc8efd486c757b',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+  
 
 
           </div>
@@ -387,7 +434,7 @@ var _hmt = _hmt || [];
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
-		showTags: false
+		showTags: true
 	}
 </script>
 
@@ -496,7 +543,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">某四大技术主管&lt;br&gt;「mongoDB Professional」第15位获得者&lt;br&gt;「红色警戒:复兴」联合创始人&lt;br&gt;「Python专栏」公众号作者&lt;br&gt;致力于DevOps的推广和实施</div>
   	  	
     	</section>
     
