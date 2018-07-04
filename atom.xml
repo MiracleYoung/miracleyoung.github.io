@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-04T00:52:02.500Z</updated>
+  <updated>2018-07-04T02:51:08.512Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,15 +21,16 @@
     <link href="http://yoursite.com/Diary/2018/Jul/20180701/"/>
     <id>http://yoursite.com/Diary/2018/Jul/20180701/</id>
     <published>2018-07-01T00:06:22.746Z</published>
-    <updated>2018-07-04T00:52:02.500Z</updated>
+    <updated>2018-07-04T02:51:08.512Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="20180701"><a href="#20180701" class="headerlink" title="20180701"></a>20180701</h1><h2 id="总结20180625-20180630"><a href="#总结20180625-20180630" class="headerlink" title="总结20180625-20180630"></a>总结20180625-20180630</h2><ul><li>看完Python Data Structure</li><li>初探ELK</li><li>Tapdata POC 文档</li><li>向张sir 讨教了公众号运营心得</li></ul><h3 id="Python-Data-Structure"><a href="#Python-Data-Structure" class="headerlink" title="Python Data Structure"></a>Python Data Structure</h3><ul><li>查找的方法<ul><li>顺序查找</li><li>二分查找 =&gt; 依赖有序列表</li><li>hash查找 =&gt; 拉链发/开地址法</li></ul></li><li>排序<ul><li>冒泡排序</li><li>选择排序</li><li>插入排序</li><li>希尔排序</li><li>归并排序</li><li>快速排序</li></ul></li></ul><h3 id="初探ELK"><a href="#初探ELK" class="headerlink" title="初探ELK"></a>初探ELK</h3><ul><li>掌握了Elasticsearch/Logstash/Kibana的基本用法</li><li>搭建ELK</li><li>可以通过Logstash的自定义pattern对mongoDB的log日志进行解析。</li><li>目前还需要对mongodb的日志进行进一步解析，以获得有用数据</li><li>掌握了Logstash的grok用法</li></ul><h3 id="Tapdata-Poc-文档"><a href="#Tapdata-Poc-文档" class="headerlink" title="Tapdata Poc 文档"></a>Tapdata Poc 文档</h3><ul><li>完成对AWR报告的分析</li><li>制定POC方案</li></ul><h3 id="向张sir-讨教了公众号运营心得"><a href="#向张sir-讨教了公众号运营心得" class="headerlink" title="向张sir 讨教了公众号运营心得"></a>向张sir 讨教了公众号运营心得</h3><ul><li>目前阶段，可以通过 互推/踩热点 来引流</li><li>踩热点要能够抓住关键词</li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="总结20180625-20180630"><a href="#总结20180625-20180630" class="headerlink" title="总结20180625-20180630"></a>总结20180625-20180630</h2><ul><li>看完Python Data Structure</li><li>初探ELK</li><li>Tapdata POC 文档</li><li>向张sir 讨教了公众号运营心得</li></ul><h2 id="Tech"><a href="#Tech" class="headerlink" title="Tech"></a>Tech</h2><h3 id="Python-Data-Structure"><a href="#Python-Data-Structure" class="headerlink" title="Python Data Structure"></a>Python Data Structure</h3><ul><li>查找的方法<ul><li>顺序查找</li><li>二分查找 =&gt; 依赖有序列表</li><li>hash查找 =&gt; 拉链发/开地址法</li></ul></li><li>排序<ul><li>冒泡排序</li><li>选择排序</li><li>插入排序</li><li>希尔排序</li><li>归并排序</li><li>快速排序</li></ul></li></ul><h3 id="初探ELK"><a href="#初探ELK" class="headerlink" title="初探ELK"></a>初探ELK</h3><ul><li>掌握了Elasticsearch/Logstash/Kibana的基本用法</li><li>搭建ELK</li><li>可以通过Logstash的自定义pattern对mongoDB的log日志进行解析。</li><li>目前还需要对mongodb的日志进行进一步解析，以获得有用数据</li><li>掌握了Logstash的grok用法</li></ul><h3 id="Tapdata-Poc-文档"><a href="#Tapdata-Poc-文档" class="headerlink" title="Tapdata Poc 文档"></a>Tapdata Poc 文档</h3><ul><li>完成对AWR报告的分析</li><li>制定POC方案</li></ul><h3 id="向张sir-讨教了公众号运营心得"><a href="#向张sir-讨教了公众号运营心得" class="headerlink" title="向张sir 讨教了公众号运营心得"></a>向张sir 讨教了公众号运营心得</h3><ul><li>目前阶段，可以通过 互推/踩热点 来引流</li><li>踩热点要能够抓住关键词</li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;20180701&quot;&gt;&lt;a href=&quot;#20180701&quot; class=&quot;headerlink&quot; title=&quot;20180701&quot;&gt;&lt;/a&gt;20180701&lt;/h1&gt;&lt;h2 id=&quot;总结20180625-20180630&quot;&gt;&lt;a href=&quot;#总结20180625
+        &lt;h2 id=&quot;总结20180625-20180630&quot;&gt;&lt;a href=&quot;#总结20180625-20180630&quot; class=&quot;headerlink&quot; title=&quot;总结20180625-20180630&quot;&gt;&lt;/a&gt;总结20180625-20180630&lt;/h2&gt;&lt;ul&gt;
+
       
     
     </summary>
@@ -41,6 +42,8 @@
       <category term="Jul" scheme="http://yoursite.com/categories/Diary/2018/Jul/"/>
     
     
+      <category term="Dairy" scheme="http://yoursite.com/tags/Dairy/"/>
+    
   </entry>
   
   <entry>
@@ -48,15 +51,19 @@
     <link href="http://yoursite.com/Diary/2018/Jun/20180628/"/>
     <id>http://yoursite.com/Diary/2018/Jun/20180628/</id>
     <published>2018-06-29T14:36:00.298Z</published>
-    <updated>2018-07-04T01:02:30.353Z</updated>
+    <updated>2018-07-04T02:52:17.633Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="20180614"><a href="#20180614" class="headerlink" title="20180614"></a>20180614</h1><h2 id="Daily"><a href="#Daily" class="headerlink" title="Daily"></a>Daily</h2><ul><li>Elasticsearch</li><li>Logstash</li></ul><h2 id="Tech"><a href="#Tech" class="headerlink" title="Tech"></a>Tech</h2><h3 id="Elasticsearch"><a href="#Elasticsearch" class="headerlink" title="Elasticsearch"></a>Elasticsearch</h3><ul><li>索引，indices</li><li>index =&gt; db, type =&gt; table, document =&gt; row</li><li><code>/_cat</code> 查看一些系统命令</li><li><code>/_search</code> 查找</li></ul><h3 id="Logstash"><a href="#Logstash" class="headerlink" title="Logstash"></a>Logstash</h3><ul><li>input{}, filter{}, output{}</li><li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">input &#123;</span><br><span class="line">    file &#123;</span><br><span class="line">        path =&gt; [&apos;&apos;, &apos;&apos;]</span><br><span class="line">        type =&gt; &quot;system&quot;</span><br><span class="line">        start_position =&gt; &quot;beginning&quot;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>plugin</p><ul><li>generator plugin: 生成加数据</li></ul></li><li>Redis 可以作为Broker</li><li>collectd：收集系统性能和提供各种存储方式来存储不同值的机制</li><li><p>Grok</p><ul><li><code>%{SYNTAX_NAME:SEMANTIC}</code>, %{表达式名字：解析出来的名字}</li><li>pattern 在 <code>vendor/bundle/jruby/2.3.0/gems/logstash-pattern-core-4.1.2/patterns</code> 下面</li><li><p>自定义pattern</p><ul><li>匿名：将 <code>%{SYNTAX_NAME:SEMANTIC}</code> =&gt; <code>(?&lt;SEMANTIC&gt;regexp)</code></li><li><p>非匿名</p><ul><li>在pattern目录下创建一个文件，文件名随意</li><li><p>将dir 加入grok路径，</p>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">grok &#123;</span><br><span class="line">    patterns_dir =&gt; &quot;./dir&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>文件内：<code>SYNTAX_NAME regexp</code></p></li><li>使用方法相同 <code>%{SYNTAX_NAME:SEMANTIC}</code></li></ul></li></ul></li></ul></li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="Daily"><a href="#Daily" class="headerlink" title="Daily"></a>Daily</h2><ul><li>Elasticsearch</li><li>Logstash</li></ul><h2 id="Tech"><a href="#Tech" class="headerlink" title="Tech"></a>Tech</h2><h3 id="Elasticsearch"><a href="#Elasticsearch" class="headerlink" title="Elasticsearch"></a>Elasticsearch</h3><ul><li>索引，indices</li><li>index =&gt; db, type =&gt; table, document =&gt; row</li><li><code>/_cat</code> 查看一些系统命令</li><li><code>/_search</code> 查找</li></ul><h3 id="Logstash"><a href="#Logstash" class="headerlink" title="Logstash"></a>Logstash</h3><ul><li>input{}, filter{}, output{}</li><li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">input &#123;</span><br><span class="line">    file &#123;</span><br><span class="line">        path =&gt; [&apos;&apos;, &apos;&apos;]</span><br><span class="line">        type =&gt; &quot;system&quot;</span><br><span class="line">        start_position =&gt; &quot;beginning&quot;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>plugin</p><ul><li>generator plugin: 生成加数据</li></ul></li><li>Redis 可以作为Broker</li><li>collectd：收集系统性能和提供各种存储方式来存储不同值的机制</li><li><p>Grok</p><ul><li><code>%{SYNTAX_NAME:SEMANTIC}</code>, %{表达式名字：解析出来的名字}</li><li>pattern 在 <code>vendor/bundle/jruby/2.3.0/gems/logstash-pattern-core-4.1.2/patterns</code> 下面</li><li><p>自定义pattern</p><ul><li>匿名：将 <code>%{SYNTAX_NAME:SEMANTIC}</code> =&gt; <code>(?&lt;SEMANTIC&gt;regexp)</code></li><li><p>非匿名</p><ul><li>在pattern目录下创建一个文件，文件名随意</li><li><p>将dir 加入grok路径，</p>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">grok &#123;</span><br><span class="line">    patterns_dir =&gt; &quot;./dir&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>文件内：<code>SYNTAX_NAME regexp</code></p></li><li>使用方法相同 <code>%{SYNTAX_NAME:SEMANTIC}</code></li></ul></li></ul></li></ul></li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;20180614&quot;&gt;&lt;a href=&quot;#20180614&quot; class=&quot;headerlink&quot; title=&quot;20180614&quot;&gt;&lt;/a&gt;20180614&lt;/h1&gt;&lt;h2 id=&quot;Daily&quot;&gt;&lt;a href=&quot;#Daily&quot; class=&quot;headerlink
+        &lt;h2 id=&quot;Daily&quot;&gt;&lt;a href=&quot;#Daily&quot; class=&quot;headerlink&quot; title=&quot;Daily&quot;&gt;&lt;/a&gt;Daily&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Elasticsearch&lt;/li&gt;
+&lt;li&gt;Logstash&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;T
       
     
     </summary>
@@ -67,6 +74,8 @@
     
       <category term="Jun" scheme="http://yoursite.com/categories/Diary/2018/Jun/"/>
     
+    
+      <category term="Dairy" scheme="http://yoursite.com/tags/Dairy/"/>
     
   </entry>
   
@@ -75,15 +84,20 @@
     <link href="http://yoursite.com/Diary/2018/Jun/20180624/"/>
     <id>http://yoursite.com/Diary/2018/Jun/20180624/</id>
     <published>2018-06-26T13:11:47.486Z</published>
-    <updated>2018-07-04T01:02:23.122Z</updated>
+    <updated>2018-07-04T02:53:29.019Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="20180614"><a href="#20180614" class="headerlink" title="20180614"></a>20180614</h1><h2 id="Daily"><a href="#Daily" class="headerlink" title="Daily"></a>Daily</h2><ul><li>查找<ul><li>顺序查找</li><li>二分查找</li><li>Hash查找<ul><li>分组求合法</li><li>平方取中法</li></ul></li></ul></li><li>排序<ul><li>冒泡排序</li><li>选择排序</li><li>插入排序</li><li>希尔排序</li><li>归并排序</li><li>快速排序</li></ul></li></ul><h2 id="Tech"><a href="#Tech" class="headerlink" title="Tech"></a>Tech</h2><h3 id="顺序查找"><a href="#顺序查找" class="headerlink" title="顺序查找"></a>顺序查找</h3><ul><li>无序列表和有序列表都是 O(n)</li></ul><h3 id="二分查找"><a href="#二分查找" class="headerlink" title="二分查找"></a>二分查找</h3><ul><li>有序列表对于二分查找非常重要</li><li>选择中间的数进行比较，然后缩小范围，在选择中间数进行比较</li><li>O(log^n)</li></ul><h3 id="Hash查找"><a href="#Hash查找" class="headerlink" title="Hash查找"></a>Hash查找</h3><ul><li>开地址法和拉链法</li></ul><h3 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h3><ul><li>将列表从头开始遍历，每次遍历都将最大的值放在正确的地方（比如列表的尾部）</li><li>一共要循环n-1次，所以复杂度是 O(n^2)</li><li>若遍历期间没有交换，则说明已经排序，若已经排序，则可以提前停止。这种叫 <strong>短冒泡排序</strong></li></ul><h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><ul><li>每次遍历记录下最大的项，只做一次交换</li><li>虽然也是O(n^2) 但是交换次数明显减少很多</li></ul><h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3><ul><li>维护一个子列表, 每次遍历都将新值插入到合适的位置</li><li>新值和列表中的末尾进行比较，若末尾大，则后移一位，继续比较。直到遇到小于他的数字，则停止移位，并停留在空白处。</li></ul><p><img src="https://ws2.sinaimg.cn/large/006tKfTcgy1fsows5uu7sj30jd09u0tm.jpg" alt=""></p><h3 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a>希尔排序</h3><ul><li>递减递增排序</li><li>将原始列表拆分为多个子列表</li><li>每个子列表采用插入排序</li><li>选取合适的增量GAP来决定子列表</li></ul><h3 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h3><ul><li><img src="https://ws1.sinaimg.cn/large/006tKfTcgy1fsowxw60wzj30kh09wwf7.jpg" alt=""></li><li>不断将列表拆分为一半，若列表为空或一半，则按定义进行排序</li><li>一旦对两半列表排序完成，则进行合并</li></ul><h3 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h3><ul><li><img src="https://ws1.sinaimg.cn/large/006tKfTcgy1fsox3fzgpdj30jh0jwgnc.jpg" alt=""></li><li>选择一个枢轴值，帮助拆分列表。一般选择第一个。</li><li>从左开始直到大于枢轴值，从右开始直到小于枢轴值，交换2个值，继续。</li><li>若枢轴值在中间，则只需要O(log^n)，为了找到分割点，需要检查n个项，所以是O(nlog^n)，如果非常偏向左或右，就是O(n)</li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="Daily"><a href="#Daily" class="headerlink" title="Daily"></a>Daily</h2><ul><li>查找<ul><li>顺序查找</li><li>二分查找</li><li>Hash查找<ul><li>分组求合法</li><li>平方取中法</li></ul></li></ul></li><li>排序<ul><li>冒泡排序</li><li>选择排序</li><li>插入排序</li><li>希尔排序</li><li>归并排序</li><li>快速排序</li></ul></li></ul><h2 id="Tech"><a href="#Tech" class="headerlink" title="Tech"></a>Tech</h2><h3 id="顺序查找"><a href="#顺序查找" class="headerlink" title="顺序查找"></a>顺序查找</h3><ul><li>无序列表和有序列表都是 O(n)</li></ul><h3 id="二分查找"><a href="#二分查找" class="headerlink" title="二分查找"></a>二分查找</h3><ul><li>有序列表对于二分查找非常重要</li><li>选择中间的数进行比较，然后缩小范围，在选择中间数进行比较</li><li>O(log^n)</li></ul><h3 id="Hash查找"><a href="#Hash查找" class="headerlink" title="Hash查找"></a>Hash查找</h3><ul><li>开地址法和拉链法</li></ul><h3 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h3><ul><li>将列表从头开始遍历，每次遍历都将最大的值放在正确的地方（比如列表的尾部）</li><li>一共要循环n-1次，所以复杂度是 O(n^2)</li><li>若遍历期间没有交换，则说明已经排序，若已经排序，则可以提前停止。这种叫 <strong>短冒泡排序</strong></li></ul><h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><ul><li>每次遍历记录下最大的项，只做一次交换</li><li>虽然也是O(n^2) 但是交换次数明显减少很多</li></ul><h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3><ul><li>维护一个子列表, 每次遍历都将新值插入到合适的位置</li><li>新值和列表中的末尾进行比较，若末尾大，则后移一位，继续比较。直到遇到小于他的数字，则停止移位，并停留在空白处。</li></ul><p><img src="https://ws2.sinaimg.cn/large/006tKfTcgy1fsows5uu7sj30jd09u0tm.jpg" alt=""></p><h3 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a>希尔排序</h3><ul><li>递减递增排序</li><li>将原始列表拆分为多个子列表</li><li>每个子列表采用插入排序</li><li>选取合适的增量GAP来决定子列表</li></ul><h3 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h3><ul><li><img src="https://ws1.sinaimg.cn/large/006tKfTcgy1fsowxw60wzj30kh09wwf7.jpg" alt=""></li><li>不断将列表拆分为一半，若列表为空或一半，则按定义进行排序</li><li>一旦对两半列表排序完成，则进行合并</li></ul><h3 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h3><ul><li><img src="https://ws1.sinaimg.cn/large/006tKfTcgy1fsox3fzgpdj30jh0jwgnc.jpg" alt=""></li><li>选择一个枢轴值，帮助拆分列表。一般选择第一个。</li><li>从左开始直到大于枢轴值，从右开始直到小于枢轴值，交换2个值，继续。</li><li>若枢轴值在中间，则只需要O(log^n)，为了找到分割点，需要检查n个项，所以是O(nlog^n)，如果非常偏向左或右，就是O(n)</li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;20180614&quot;&gt;&lt;a href=&quot;#20180614&quot; class=&quot;headerlink&quot; title=&quot;20180614&quot;&gt;&lt;/a&gt;20180614&lt;/h1&gt;&lt;h2 id=&quot;Daily&quot;&gt;&lt;a href=&quot;#Daily&quot; class=&quot;headerlink
+        &lt;h2 id=&quot;Daily&quot;&gt;&lt;a href=&quot;#Daily&quot; class=&quot;headerlink&quot; title=&quot;Daily&quot;&gt;&lt;/a&gt;Daily&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;查找&lt;ul&gt;
+&lt;li&gt;顺序查找&lt;/li&gt;
+&lt;li&gt;二分查找&lt;/li&gt;
+&lt;li&gt;Hash查找&lt;ul&gt;
+&lt;l
       
     
     </summary>
@@ -94,6 +108,8 @@
     
       <category term="Jun" scheme="http://yoursite.com/categories/Diary/2018/Jun/"/>
     
+    
+      <category term="Dairy" scheme="http://yoursite.com/tags/Dairy/"/>
     
   </entry>
   
@@ -102,15 +118,17 @@
     <link href="http://yoursite.com/Diary/2018/Jun/20180617/"/>
     <id>http://yoursite.com/Diary/2018/Jun/20180617/</id>
     <published>2018-06-17T23:01:38.849Z</published>
-    <updated>2018-07-04T01:02:17.091Z</updated>
+    <updated>2018-07-04T02:53:21.653Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="20180614"><a href="#20180614" class="headerlink" title="20180614"></a>20180614</h1><h2 id="Daily"><a href="#Daily" class="headerlink" title="Daily"></a>Daily</h2><ul><li>学习《Python Data Structure》4.1-4.10。掌握了递归的基本用法。</li><li>早上对媳妇有点不满，不太好，心胸开阔一些，与人为善一点。</li></ul><h2 id="Tech"><a href="#Tech" class="headerlink" title="Tech"></a>Tech</h2><h3 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h3><ul><li>计算整数列表和</li><li>阿西莫夫机器人。及在递归中的表现。<ul><li>递归算法必须是有基本情况 =&gt; 退出条件</li><li>递归算法必须改变其状态，并向基本情况靠近 =&gt; 数据在变小</li><li>递归算法必须以递归方式调用自身</li></ul></li></ul><h3 id="数据转换字符串"><a href="#数据转换字符串" class="headerlink" title="数据转换字符串"></a>数据转换字符串</h3><ul><li>在python中，任意2-16进制数 <strong>整除</strong> 一个数后，都会转成 <strong>十进制数</strong></li></ul><h3 id="栈针"><a href="#栈针" class="headerlink" title="栈针"></a>栈针</h3><ul><li>使用栈来存储余数，然后在pop出来</li></ul><h3 id="可视化递归"><a href="#可视化递归" class="headerlink" title="可视化递归"></a>可视化递归</h3><ul><li>turtle<ul><li>初始化方向向右</li><li>up(), 抬笔</li><li>down(), 落笔</li></ul></li><li>自相似性：无论放大多少倍，都是一样的。例如：树和树枝，树枝可以看成树的缩小版</li></ul><h3 id="谢尔宾斯基三角形"><a href="#谢尔宾斯基三角形" class="headerlink" title="谢尔宾斯基三角形"></a>谢尔宾斯基三角形</h3><ul><li>三角形，取其中一顶点以及该顶点与另外2点连线的中点组成的小三角形，以此可以无限循环</li></ul><h3 id="汉诺塔游戏"><a href="#汉诺塔游戏" class="headerlink" title="汉诺塔游戏"></a>汉诺塔游戏</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">tower</span><span class="params">(height, from, to, with)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> height &gt;= <span class="number">1</span>:</span><br><span class="line">        tower(height - <span class="number">1</span>, <span class="keyword">from</span> , <span class="keyword">with</span>, to)</span><br><span class="line">        move_disk(<span class="keyword">from</span>, to)</span><br><span class="line">        tower(height - <span class="number">1</span>, <span class="keyword">from</span> , to, <span class="keyword">with</span>)</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h2 id="Daily"><a href="#Daily" class="headerlink" title="Daily"></a>Daily</h2><ul><li>学习《Python Data Structure》4.1-4.10。掌握了递归的基本用法。</li><li>早上对媳妇有点不满，不太好，心胸开阔一些，与人为善一点。</li></ul><h2 id="Tech"><a href="#Tech" class="headerlink" title="Tech"></a>Tech</h2><h3 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h3><ul><li>计算整数列表和</li><li>阿西莫夫机器人。及在递归中的表现。<ul><li>递归算法必须是有基本情况 =&gt; 退出条件</li><li>递归算法必须改变其状态，并向基本情况靠近 =&gt; 数据在变小</li><li>递归算法必须以递归方式调用自身</li></ul></li></ul><h3 id="数据转换字符串"><a href="#数据转换字符串" class="headerlink" title="数据转换字符串"></a>数据转换字符串</h3><ul><li>在python中，任意2-16进制数 <strong>整除</strong> 一个数后，都会转成 <strong>十进制数</strong></li></ul><h3 id="栈针"><a href="#栈针" class="headerlink" title="栈针"></a>栈针</h3><ul><li>使用栈来存储余数，然后在pop出来</li></ul><h3 id="可视化递归"><a href="#可视化递归" class="headerlink" title="可视化递归"></a>可视化递归</h3><ul><li>turtle<ul><li>初始化方向向右</li><li>up(), 抬笔</li><li>down(), 落笔</li></ul></li><li>自相似性：无论放大多少倍，都是一样的。例如：树和树枝，树枝可以看成树的缩小版</li></ul><h3 id="谢尔宾斯基三角形"><a href="#谢尔宾斯基三角形" class="headerlink" title="谢尔宾斯基三角形"></a>谢尔宾斯基三角形</h3><ul><li>三角形，取其中一顶点以及该顶点与另外2点连线的中点组成的小三角形，以此可以无限循环</li></ul><h3 id="汉诺塔游戏"><a href="#汉诺塔游戏" class="headerlink" title="汉诺塔游戏"></a>汉诺塔游戏</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">tower</span><span class="params">(height, from, to, with)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> height &gt;= <span class="number">1</span>:</span><br><span class="line">        tower(height - <span class="number">1</span>, <span class="keyword">from</span> , <span class="keyword">with</span>, to)</span><br><span class="line">        move_disk(<span class="keyword">from</span>, to)</span><br><span class="line">        tower(height - <span class="number">1</span>, <span class="keyword">from</span> , to, <span class="keyword">with</span>)</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;20180614&quot;&gt;&lt;a href=&quot;#20180614&quot; class=&quot;headerlink&quot; title=&quot;20180614&quot;&gt;&lt;/a&gt;20180614&lt;/h1&gt;&lt;h2 id=&quot;Daily&quot;&gt;&lt;a href=&quot;#Daily&quot; class=&quot;headerlink
+        &lt;h2 id=&quot;Daily&quot;&gt;&lt;a href=&quot;#Daily&quot; class=&quot;headerlink&quot; title=&quot;Daily&quot;&gt;&lt;/a&gt;Daily&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;学习《Python Data Structure》4.1-4.10。掌握了递归的基本用法。&lt;/li&gt;
+&lt;
       
     
     </summary>
@@ -121,6 +139,8 @@
     
       <category term="Jun" scheme="http://yoursite.com/categories/Diary/2018/Jun/"/>
     
+    
+      <category term="Dairy" scheme="http://yoursite.com/tags/Dairy/"/>
     
   </entry>
   
@@ -129,15 +149,18 @@
     <link href="http://yoursite.com/Diary/2018/Jun/20180615/"/>
     <id>http://yoursite.com/Diary/2018/Jun/20180615/</id>
     <published>2018-06-17T06:20:10.327Z</published>
-    <updated>2018-07-04T01:02:10.985Z</updated>
+    <updated>2018-07-04T02:53:12.104Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="20180614"><a href="#20180614" class="headerlink" title="20180614"></a>20180614</h1><h2 id="Daily"><a href="#Daily" class="headerlink" title="Daily"></a>Daily</h2><ul><li>学习《Python Data Structure》3.10 - 3.24</li></ul><h2 id="Tech"><a href="#Tech" class="headerlink" title="Tech"></a>Tech</h2><h3 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h3><ul><li>FIFO，先进先出的有序集合</li><li>添加项的一端是队尾，删除项的一端是队首</li><li><code>Queue()</code><ul><li><code>enqueue()</code></li><li><code>dequeue()</code></li><li><code>size()</code></li><li><code>is_empty()</code></li></ul></li><li>约瑟夫问题，有n个人，按m报数，第m个人自杀，直到最后一个</li></ul><h3 id="打印机队列"><a href="#打印机队列" class="headerlink" title="打印机队列"></a>打印机队列</h3><ul><li>有1台打印机每分钟打印k张纸，n个学生每个学生创建任务页数1-20页</li><li>打印机的任务队列，每个任务都有时间戳（用于标记任务创建的时间，最后用于计算任务开始的时候离创建的时候花费了多久）</li><li>每秒：<ul><li>是否创建新的打印任务（通过一个随机函数来判断），若是，将任务添加到任务队列中</li><li>若打印机不忙，并且有任务在队列中<ul><li>从打印机队列中删除一个任务，并将其分配给打印机</li><li>从当前时间减去创建时间，获得当前任务的等待时间</li><li>将等待时间添加到时间等待列表中，一共后续计算</li><li>根据打印任务的页数，计算打印机打印完这个任务需要多少时间</li></ul></li><li>打印机需要1秒打印，需要从等待时间中减去一秒</li><li>若任务完成，所需时间已经达到零，打印机空闲</li></ul></li><li>模拟完成后，从生成的等待时间列表中计算平均等待时间。</li></ul><h3 id="Deque"><a href="#Deque" class="headerlink" title="Deque"></a>Deque</h3><ul><li>双向队列</li><li><code>Deque()</code><ul><li><code>add_front(item)</code></li><li><code>add_rear(item)</code></li><li><code>remove_front()</code></li><li><code>remove_rear()</code></li><li><code>is_empty()</code></li><li><code>size()</code></li></ul></li></ul><h3 id="回文检查"><a href="#回文检查" class="headerlink" title="回文检查"></a>回文检查</h3><ul><li>头尾相同的字符串，例如：rtotr, abba</li><li>用deque来做，存的时候<code>add_front()</code>, 取的时候<code>remove_front()</code>,<code>remove_rear()</code> 比较即可</li></ul><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><ul><li><code>List()</code><ul><li><code>add(item)</code></li><li><code>remove(item)</code></li><li><code>search(item)</code></li><li><code>is_empty()</code></li><li><code>size()</code></li><li><code>append(item)</code></li><li><code>index(item)</code></li><li><code>insert(pos, item)</code></li><li><code>pop()</code></li><li><code>pop(pos)</code></li></ul></li></ul><h3 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h3><ul><li>没有next节点的节点称为“接地节点”</li></ul><h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><ul><li><code>OrderList()</code></li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="Daily"><a href="#Daily" class="headerlink" title="Daily"></a>Daily</h2><ul><li>学习《Python Data Structure》3.10 - 3.24</li></ul><h2 id="Tech"><a href="#Tech" class="headerlink" title="Tech"></a>Tech</h2><h3 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h3><ul><li>FIFO，先进先出的有序集合</li><li>添加项的一端是队尾，删除项的一端是队首</li><li><code>Queue()</code><ul><li><code>enqueue()</code></li><li><code>dequeue()</code></li><li><code>size()</code></li><li><code>is_empty()</code></li></ul></li><li>约瑟夫问题，有n个人，按m报数，第m个人自杀，直到最后一个</li></ul><h3 id="打印机队列"><a href="#打印机队列" class="headerlink" title="打印机队列"></a>打印机队列</h3><ul><li>有1台打印机每分钟打印k张纸，n个学生每个学生创建任务页数1-20页</li><li>打印机的任务队列，每个任务都有时间戳（用于标记任务创建的时间，最后用于计算任务开始的时候离创建的时候花费了多久）</li><li>每秒：<ul><li>是否创建新的打印任务（通过一个随机函数来判断），若是，将任务添加到任务队列中</li><li>若打印机不忙，并且有任务在队列中<ul><li>从打印机队列中删除一个任务，并将其分配给打印机</li><li>从当前时间减去创建时间，获得当前任务的等待时间</li><li>将等待时间添加到时间等待列表中，一共后续计算</li><li>根据打印任务的页数，计算打印机打印完这个任务需要多少时间</li></ul></li><li>打印机需要1秒打印，需要从等待时间中减去一秒</li><li>若任务完成，所需时间已经达到零，打印机空闲</li></ul></li><li>模拟完成后，从生成的等待时间列表中计算平均等待时间。</li></ul><h3 id="Deque"><a href="#Deque" class="headerlink" title="Deque"></a>Deque</h3><ul><li>双向队列</li><li><code>Deque()</code><ul><li><code>add_front(item)</code></li><li><code>add_rear(item)</code></li><li><code>remove_front()</code></li><li><code>remove_rear()</code></li><li><code>is_empty()</code></li><li><code>size()</code></li></ul></li></ul><h3 id="回文检查"><a href="#回文检查" class="headerlink" title="回文检查"></a>回文检查</h3><ul><li>头尾相同的字符串，例如：rtotr, abba</li><li>用deque来做，存的时候<code>add_front()</code>, 取的时候<code>remove_front()</code>,<code>remove_rear()</code> 比较即可</li></ul><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><ul><li><code>List()</code><ul><li><code>add(item)</code></li><li><code>remove(item)</code></li><li><code>search(item)</code></li><li><code>is_empty()</code></li><li><code>size()</code></li><li><code>append(item)</code></li><li><code>index(item)</code></li><li><code>insert(pos, item)</code></li><li><code>pop()</code></li><li><code>pop(pos)</code></li></ul></li></ul><h3 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h3><ul><li>没有next节点的节点称为“接地节点”</li></ul><h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><ul><li><code>OrderList()</code></li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;20180614&quot;&gt;&lt;a href=&quot;#20180614&quot; class=&quot;headerlink&quot; title=&quot;20180614&quot;&gt;&lt;/a&gt;20180614&lt;/h1&gt;&lt;h2 id=&quot;Daily&quot;&gt;&lt;a href=&quot;#Daily&quot; class=&quot;headerlink
+        &lt;h2 id=&quot;Daily&quot;&gt;&lt;a href=&quot;#Daily&quot; class=&quot;headerlink&quot; title=&quot;Daily&quot;&gt;&lt;/a&gt;Daily&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;学习《Python Data Structure》3.10 - 3.24&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 
       
     
     </summary>
@@ -148,6 +171,8 @@
     
       <category term="Jun" scheme="http://yoursite.com/categories/Diary/2018/Jun/"/>
     
+    
+      <category term="Dairy" scheme="http://yoursite.com/tags/Dairy/"/>
     
   </entry>
   
@@ -156,15 +181,17 @@
     <link href="http://yoursite.com/Diary/2018/Jun/20180614/"/>
     <id>http://yoursite.com/Diary/2018/Jun/20180614/</id>
     <published>2018-06-14T22:03:36.401Z</published>
-    <updated>2018-07-04T01:01:47.473Z</updated>
+    <updated>2018-07-04T02:53:09.019Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="20180614"><a href="#20180614" class="headerlink" title="20180614"></a>20180614</h1><h2 id="Daily"><a href="#Daily" class="headerlink" title="Daily"></a>Daily</h2><ul><li>学习了《Python Data Structure》的 3.1～3.9</li><li>和青软初步定了8月8号～8月12号的 5天 Python 内训</li><li>装了电风扇</li><li>写公众号</li><li><strong>总结没有写，时间不够，因为看了电视剧</strong></li></ul><h2 id="Tech"><a href="#Tech" class="headerlink" title="Tech"></a>Tech</h2><ul><li>掌握了栈的定义、基本应用、使用python构造栈</li></ul><h3 id="线性结构"><a href="#线性结构" class="headerlink" title="线性结构"></a>线性结构</h3><ul><li>数据项之间的顺序由增加或删除的顺序决定的数据结构，称线性数据结构</li></ul><h3 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h3><ul><li>先进后出，LIFO</li><li>添加或删除项都发生在顶部，入口即出口</li><li>栈的作用：能反转项的顺序（浏览网页时候的后退）</li><li>使用python，实现了自定义的Stack，具有如下几个方法<ul><li><code>is_empty()</code></li><li><code>push()</code></li><li><code>pop()</code></li><li><code>peek()</code></li><li><code>size()</code></li></ul></li></ul><h4 id="用栈对括号匹配进行检查"><a href="#用栈对括号匹配进行检查" class="headerlink" title="用栈对括号匹配进行检查"></a>用栈对括号匹配进行检查</h4><ul><li>栈里存 “(“，遇到 “)” 就 <code>Stack.pop()</code></li><li>如果当前符号是 “)” ，且 <code>Stack.is_empty()</code>，则不匹配，即可退出</li><li>若最后存在标志位为True，且栈为空，则括号匹配检查成功</li><li>复杂括号匹配，使用 <code>&quot;([{&quot;.index(&quot;(&quot;)</code> 的方法对当前符号进行检查，</li></ul><h4 id="十进制转二进制"><a href="#十进制转二进制" class="headerlink" title="十进制转二进制"></a>十进制转二进制</h4><ul><li>十进制转二进制采用“除2取余法”，由于最后的余数是二进制最左边的那个数，所以可以使用栈。</li><li>数字^10 % 2 结果push 到 Stack 中去</li><li><code>&#39;&#39;.join(Stack.pop())</code></li><li>如果将十进制换成任意进制的数字，则添加一个digits参照表：<code>digits = &#39;0123456789ABCDEF&#39;</code>，每次 pop 出来的数字采用<code>digits[Stack.pop()]</code> 进行转换</li></ul><h4 id="中缀（Infix）-前缀（Prefix）-后缀（Postfix）"><a href="#中缀（Infix）-前缀（Prefix）-后缀（Postfix）" class="headerlink" title="中缀（Infix）/前缀（Prefix）/后缀（Postfix）"></a>中缀（Infix）/前缀（Prefix）/后缀（Postfix）</h4><ul><li>掌握中缀/前缀/后缀表达式的定义及转换<ul><li>中缀：A + B * C <ul><li>前缀：+A*BC</li><li>后缀：ABC*+</li></ul></li></ul></li><li>中缀转后缀<ul><li>把字符串split成列表，初始化一个Stack</li><li>通过一个优先级字典 <code>priority = {&#39;*&#39;: 3, &#39;/&#39;: 3, &#39;+&#39;: 2, &#39;-&#39;: 2, &#39;(&#39;: 1}</code>，来判断字符和操作符的入栈顺序</li><li>若”(“，则直接入栈</li><li>若”)”，循环 <code>Stack.pop()</code>，出来的不是 “(“，就追加到结果中去，否则退出循环</li><li>若”*/+-“，若Stack不为空，且Stack.peek() &gt;= 当前操作符的优先级，则append到结果中去，再把当前操作符push到Stack中，否则直接push到Stack中</li><li>循环结束后，若Stack不为空，则循环pop，并append到结果中</li><li><code>&#39;&#39;.join(ret)</code></li></ul></li><li>计算后缀<ul><li>若是[0-9]，则push到Stack中去</li><li>若是操作符，则从Stack中pop出2个，与操作符进行计算，<strong>计算顺序为第二个pop出来的数字 操作符 第一个pop出来的数字</strong></li></ul></li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="Daily"><a href="#Daily" class="headerlink" title="Daily"></a>Daily</h2><ul><li>学习了《Python Data Structure》的 3.1～3.9</li><li>和青软初步定了8月8号～8月12号的 5天 Python 内训</li><li>装了电风扇</li><li>写公众号</li><li><strong>总结没有写，时间不够，因为看了电视剧</strong></li></ul><h2 id="Tech"><a href="#Tech" class="headerlink" title="Tech"></a>Tech</h2><ul><li>掌握了栈的定义、基本应用、使用python构造栈</li></ul><h3 id="线性结构"><a href="#线性结构" class="headerlink" title="线性结构"></a>线性结构</h3><ul><li>数据项之间的顺序由增加或删除的顺序决定的数据结构，称线性数据结构</li></ul><h3 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h3><ul><li>先进后出，LIFO</li><li>添加或删除项都发生在顶部，入口即出口</li><li>栈的作用：能反转项的顺序（浏览网页时候的后退）</li><li>使用python，实现了自定义的Stack，具有如下几个方法<ul><li><code>is_empty()</code></li><li><code>push()</code></li><li><code>pop()</code></li><li><code>peek()</code></li><li><code>size()</code></li></ul></li></ul><h4 id="用栈对括号匹配进行检查"><a href="#用栈对括号匹配进行检查" class="headerlink" title="用栈对括号匹配进行检查"></a>用栈对括号匹配进行检查</h4><ul><li>栈里存 “(“，遇到 “)” 就 <code>Stack.pop()</code></li><li>如果当前符号是 “)” ，且 <code>Stack.is_empty()</code>，则不匹配，即可退出</li><li>若最后存在标志位为True，且栈为空，则括号匹配检查成功</li><li>复杂括号匹配，使用 <code>&quot;([{&quot;.index(&quot;(&quot;)</code> 的方法对当前符号进行检查，</li></ul><h4 id="十进制转二进制"><a href="#十进制转二进制" class="headerlink" title="十进制转二进制"></a>十进制转二进制</h4><ul><li>十进制转二进制采用“除2取余法”，由于最后的余数是二进制最左边的那个数，所以可以使用栈。</li><li>数字^10 % 2 结果push 到 Stack 中去</li><li><code>&#39;&#39;.join(Stack.pop())</code></li><li>如果将十进制换成任意进制的数字，则添加一个digits参照表：<code>digits = &#39;0123456789ABCDEF&#39;</code>，每次 pop 出来的数字采用<code>digits[Stack.pop()]</code> 进行转换</li></ul><h4 id="中缀（Infix）-前缀（Prefix）-后缀（Postfix）"><a href="#中缀（Infix）-前缀（Prefix）-后缀（Postfix）" class="headerlink" title="中缀（Infix）/前缀（Prefix）/后缀（Postfix）"></a>中缀（Infix）/前缀（Prefix）/后缀（Postfix）</h4><ul><li>掌握中缀/前缀/后缀表达式的定义及转换<ul><li>中缀：A + B * C <ul><li>前缀：+A*BC</li><li>后缀：ABC*+</li></ul></li></ul></li><li>中缀转后缀<ul><li>把字符串split成列表，初始化一个Stack</li><li>通过一个优先级字典 <code>priority = {&#39;*&#39;: 3, &#39;/&#39;: 3, &#39;+&#39;: 2, &#39;-&#39;: 2, &#39;(&#39;: 1}</code>，来判断字符和操作符的入栈顺序</li><li>若”(“，则直接入栈</li><li>若”)”，循环 <code>Stack.pop()</code>，出来的不是 “(“，就追加到结果中去，否则退出循环</li><li>若”*/+-“，若Stack不为空，且Stack.peek() &gt;= 当前操作符的优先级，则append到结果中去，再把当前操作符push到Stack中，否则直接push到Stack中</li><li>循环结束后，若Stack不为空，则循环pop，并append到结果中</li><li><code>&#39;&#39;.join(ret)</code></li></ul></li><li>计算后缀<ul><li>若是[0-9]，则push到Stack中去</li><li>若是操作符，则从Stack中pop出2个，与操作符进行计算，<strong>计算顺序为第二个pop出来的数字 操作符 第一个pop出来的数字</strong></li></ul></li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;20180614&quot;&gt;&lt;a href=&quot;#20180614&quot; class=&quot;headerlink&quot; title=&quot;20180614&quot;&gt;&lt;/a&gt;20180614&lt;/h1&gt;&lt;h2 id=&quot;Daily&quot;&gt;&lt;a href=&quot;#Daily&quot; class=&quot;headerlink
+        &lt;h2 id=&quot;Daily&quot;&gt;&lt;a href=&quot;#Daily&quot; class=&quot;headerlink&quot; title=&quot;Daily&quot;&gt;&lt;/a&gt;Daily&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;学习了《Python Data Structure》的 3.1～3.9&lt;/li&gt;
+&lt;li&gt;和青软初步定了
       
     
     </summary>
@@ -175,6 +202,8 @@
     
       <category term="Jun" scheme="http://yoursite.com/categories/Diary/2018/Jun/"/>
     
+    
+      <category term="Dairy" scheme="http://yoursite.com/tags/Dairy/"/>
     
   </entry>
   
@@ -183,15 +212,17 @@
     <link href="http://yoursite.com/Diary/2018/Jun/20180606/"/>
     <id>http://yoursite.com/Diary/2018/Jun/20180606/</id>
     <published>2018-06-06T14:38:08.873Z</published>
-    <updated>2018-07-04T01:02:00.012Z</updated>
+    <updated>2018-07-04T02:53:05.199Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="20180606"><a href="#20180606" class="headerlink" title="20180606"></a>20180606</h1><h2 id="Daily"><a href="#Daily" class="headerlink" title="Daily"></a>Daily</h2><ul><li>上午看了PEP8规范、一些python的文章</li><li>下午继续看python的文章，对于super继承有了新的认识，对于反射器理解的还不是很透彻，明天继续</li></ul><h2 id="Tech"><a href="#Tech" class="headerlink" title="Tech"></a>Tech</h2><h3 id="代码技巧"><a href="#代码技巧" class="headerlink" title="代码技巧"></a>代码技巧</h3><ul><li>提前结束代码，比如使用raise关键字去将几个and条件拆开来</li><li>函数可以有效封装</li><li>动态表达式：<code>f = func1 or func2; f(*args)</code>，利用参数解构</li><li>利用 <strong>德摩根定律</strong>， (A交B)的反 = (A的反)并(B的反)</li><li>通过对类<code>__len__</code>的自定义，来满足类的bool比较</li><li><p>多使用<code>all()</code>和<code>any()</code></p>  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fn</span><span class="params">(numbers)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> bool(numbers) <span class="keyword">and</span> all(n &gt; <span class="number">10</span> <span class="keyword">for</span> n <span class="keyword">in</span> numbers)</span><br></pre></td></tr></table></figure></li><li><p>多使用<code>try...else</code>和<code>for...else</code></p></li></ul><h3 id="陷阱"><a href="#陷阱" class="headerlink" title="陷阱"></a>陷阱</h3><ul><li>使用<code>is None</code>而不是<code>== None</code></li><li>and的优先级大于or：<code>True or False and False</code>和<code>(True or False) and False</code></li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="Daily"><a href="#Daily" class="headerlink" title="Daily"></a>Daily</h2><ul><li>上午看了PEP8规范、一些python的文章</li><li>下午继续看python的文章，对于super继承有了新的认识，对于反射器理解的还不是很透彻，明天继续</li></ul><h2 id="Tech"><a href="#Tech" class="headerlink" title="Tech"></a>Tech</h2><h3 id="代码技巧"><a href="#代码技巧" class="headerlink" title="代码技巧"></a>代码技巧</h3><ul><li>提前结束代码，比如使用raise关键字去将几个and条件拆开来</li><li>函数可以有效封装</li><li>动态表达式：<code>f = func1 or func2; f(*args)</code>，利用参数解构</li><li>利用 <strong>德摩根定律</strong>， (A交B)的反 = (A的反)并(B的反)</li><li>通过对类<code>__len__</code>的自定义，来满足类的bool比较</li><li><p>多使用<code>all()</code>和<code>any()</code></p>  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fn</span><span class="params">(numbers)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> bool(numbers) <span class="keyword">and</span> all(n &gt; <span class="number">10</span> <span class="keyword">for</span> n <span class="keyword">in</span> numbers)</span><br></pre></td></tr></table></figure></li><li><p>多使用<code>try...else</code>和<code>for...else</code></p></li></ul><h3 id="陷阱"><a href="#陷阱" class="headerlink" title="陷阱"></a>陷阱</h3><ul><li>使用<code>is None</code>而不是<code>== None</code></li><li>and的优先级大于or：<code>True or False and False</code>和<code>(True or False) and False</code></li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;20180606&quot;&gt;&lt;a href=&quot;#20180606&quot; class=&quot;headerlink&quot; title=&quot;20180606&quot;&gt;&lt;/a&gt;20180606&lt;/h1&gt;&lt;h2 id=&quot;Daily&quot;&gt;&lt;a href=&quot;#Daily&quot; class=&quot;headerlink
+        &lt;h2 id=&quot;Daily&quot;&gt;&lt;a href=&quot;#Daily&quot; class=&quot;headerlink&quot; title=&quot;Daily&quot;&gt;&lt;/a&gt;Daily&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;上午看了PEP8规范、一些python的文章&lt;/li&gt;
+&lt;li&gt;下午继续看python的文章，对于sup
       
     
     </summary>
@@ -202,6 +233,8 @@
     
       <category term="Jun" scheme="http://yoursite.com/categories/Diary/2018/Jun/"/>
     
+    
+      <category term="Dairy" scheme="http://yoursite.com/tags/Dairy/"/>
     
   </entry>
   
@@ -210,15 +243,16 @@
     <link href="http://yoursite.com/Diary/2018/Jun/20180605/"/>
     <id>http://yoursite.com/Diary/2018/Jun/20180605/</id>
     <published>2018-06-05T21:56:08.874Z</published>
-    <updated>2018-07-04T01:01:54.871Z</updated>
+    <updated>2018-07-04T02:53:00.519Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="20180605"><a href="#20180605" class="headerlink" title="20180605"></a>20180605</h1><h2 id="Daily"><a href="#Daily" class="headerlink" title="Daily"></a>Daily</h2><ul><li>上午去浦发信用卡中心面试了，太早过去，期间一直刷手机，主要还是因为没有联系上人，<strong>所以下次一定要保留hr联系方式</strong>，避免早到、临时有事无法联系。之后和部门老大聊，似乎没有聊什么技术，后面得知面的是个应用运维岗位，有点不太匹配，<strong>以后面试前，一定要对岗位职责定性，免去徒劳的奔波</strong>。</li><li>12点吃饭，睡到1:45，2点开始学习，这个时间可以缩短，以后 <strong>吃饭到1点，回来手机消息扫一下，就可以直接休息了</strong>，不用刷到1:15，影响后续休息。</li><li>下午看了GIL和多线程多进程，这一段时间利用率还算大，尽量避免他人干扰。</li><li>之后开始看celery。并没有开始写，已经安装完环境，明天就可以写代码了。</li><li>Docker/k8s 这个是现在的技术趋势，需要去看，可以调整一下，把celery放一下，把docker看掉。本周的重点，<strong>docker</strong>。</li></ul><h2 id="Tech"><a href="#Tech" class="headerlink" title="Tech"></a>Tech</h2><h3 id="GIL"><a href="#GIL" class="headerlink" title="GIL"></a>GIL</h3><ul><li>python 的GIL是针对Cython的，python的默认解释器，使用c语言实现。由于大多数的第三方扩展都依赖于GIL，所以Cython也就被使用最多。</li><li>GIL的存在是为了给线程分配执行权限，只有拿到GIL锁的线程才能够执行逻辑。</li><li>Cython解释器对GIL的分配做了一些限制，每个线程能够执行的指令次数默认为100，则被迫交出GIL，在最新的python3.6中，已经修复为刚交出GIL的线程不会再争夺到GIL。以保证尽可能多的线程执行过。</li></ul><h3 id="多线程和多进程"><a href="#多线程和多进程" class="headerlink" title="多线程和多进程"></a>多线程和多进程</h3><ul><li>多线程作用于IO密集型，多进程作用于CPU密集型</li><li>IO密集型操作，瓶颈在IO，所以指令集下达后，线程会有hang住的情况，此时采用多线程，可以有效的利用其他线程的并发。</li><li>CPU密集型操作，瓶颈在CPU，需要大量计算，类似数据矩阵计算、循环遍历等，这个时候线程并没有等待，反倒是不断的切换线程所带来的开销更大了。</li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="Daily"><a href="#Daily" class="headerlink" title="Daily"></a>Daily</h2><ul><li>上午去浦发信用卡中心面试了，太早过去，期间一直刷手机，主要还是因为没有联系上人，<strong>所以下次一定要保留hr联系方式</strong>，避免早到、临时有事无法联系。之后和部门老大聊，似乎没有聊什么技术，后面得知面的是个应用运维岗位，有点不太匹配，<strong>以后面试前，一定要对岗位职责定性，免去徒劳的奔波</strong>。</li><li>12点吃饭，睡到1:45，2点开始学习，这个时间可以缩短，以后 <strong>吃饭到1点，回来手机消息扫一下，就可以直接休息了</strong>，不用刷到1:15，影响后续休息。</li><li>下午看了GIL和多线程多进程，这一段时间利用率还算大，尽量避免他人干扰。</li><li>之后开始看celery。并没有开始写，已经安装完环境，明天就可以写代码了。</li><li>Docker/k8s 这个是现在的技术趋势，需要去看，可以调整一下，把celery放一下，把docker看掉。本周的重点，<strong>docker</strong>。</li></ul><h2 id="Tech"><a href="#Tech" class="headerlink" title="Tech"></a>Tech</h2><h3 id="GIL"><a href="#GIL" class="headerlink" title="GIL"></a>GIL</h3><ul><li>python 的GIL是针对Cython的，python的默认解释器，使用c语言实现。由于大多数的第三方扩展都依赖于GIL，所以Cython也就被使用最多。</li><li>GIL的存在是为了给线程分配执行权限，只有拿到GIL锁的线程才能够执行逻辑。</li><li>Cython解释器对GIL的分配做了一些限制，每个线程能够执行的指令次数默认为100，则被迫交出GIL，在最新的python3.6中，已经修复为刚交出GIL的线程不会再争夺到GIL。以保证尽可能多的线程执行过。</li></ul><h3 id="多线程和多进程"><a href="#多线程和多进程" class="headerlink" title="多线程和多进程"></a>多线程和多进程</h3><ul><li>多线程作用于IO密集型，多进程作用于CPU密集型</li><li>IO密集型操作，瓶颈在IO，所以指令集下达后，线程会有hang住的情况，此时采用多线程，可以有效的利用其他线程的并发。</li><li>CPU密集型操作，瓶颈在CPU，需要大量计算，类似数据矩阵计算、循环遍历等，这个时候线程并没有等待，反倒是不断的切换线程所带来的开销更大了。</li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;20180605&quot;&gt;&lt;a href=&quot;#20180605&quot; class=&quot;headerlink&quot; title=&quot;20180605&quot;&gt;&lt;/a&gt;20180605&lt;/h1&gt;&lt;h2 id=&quot;Daily&quot;&gt;&lt;a href=&quot;#Daily&quot; class=&quot;headerlink
+        &lt;h2 id=&quot;Daily&quot;&gt;&lt;a href=&quot;#Daily&quot; class=&quot;headerlink&quot; title=&quot;Daily&quot;&gt;&lt;/a&gt;Daily&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;上午去浦发信用卡中心面试了，太早过去，期间一直刷手机，主要还是因为没有联系上人，&lt;strong&gt;所以下次
       
     
     </summary>
@@ -229,6 +263,8 @@
     
       <category term="Jun" scheme="http://yoursite.com/categories/Diary/2018/Jun/"/>
     
+    
+      <category term="Dairy" scheme="http://yoursite.com/tags/Dairy/"/>
     
   </entry>
   
