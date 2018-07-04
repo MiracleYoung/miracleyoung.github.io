@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-03T00:08:02.057Z</updated>
+  <updated>2018-07-04T00:52:02.500Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>[object Object]</title>
+    <title>Dairy 20180701</title>
     <link href="http://yoursite.com/Diary/2018/Jul/20180701/"/>
     <id>http://yoursite.com/Diary/2018/Jul/20180701/</id>
     <published>2018-07-01T00:06:22.746Z</published>
-    <updated>2018-07-03T00:08:02.057Z</updated>
+    <updated>2018-07-04T00:52:02.500Z</updated>
     
     <content type="html"><![CDATA[<h1 id="20180701"><a href="#20180701" class="headerlink" title="20180701"></a>20180701</h1><h2 id="总结20180625-20180630"><a href="#总结20180625-20180630" class="headerlink" title="总结20180625-20180630"></a>总结20180625-20180630</h2><ul><li>看完Python Data Structure</li><li>初探ELK</li><li>Tapdata POC 文档</li><li>向张sir 讨教了公众号运营心得</li></ul><h3 id="Python-Data-Structure"><a href="#Python-Data-Structure" class="headerlink" title="Python Data Structure"></a>Python Data Structure</h3><ul><li>查找的方法<ul><li>顺序查找</li><li>二分查找 =&gt; 依赖有序列表</li><li>hash查找 =&gt; 拉链发/开地址法</li></ul></li><li>排序<ul><li>冒泡排序</li><li>选择排序</li><li>插入排序</li><li>希尔排序</li><li>归并排序</li><li>快速排序</li></ul></li></ul><h3 id="初探ELK"><a href="#初探ELK" class="headerlink" title="初探ELK"></a>初探ELK</h3><ul><li>掌握了Elasticsearch/Logstash/Kibana的基本用法</li><li>搭建ELK</li><li>可以通过Logstash的自定义pattern对mongoDB的log日志进行解析。</li><li>目前还需要对mongodb的日志进行进一步解析，以获得有用数据</li><li>掌握了Logstash的grok用法</li></ul><h3 id="Tapdata-Poc-文档"><a href="#Tapdata-Poc-文档" class="headerlink" title="Tapdata Poc 文档"></a>Tapdata Poc 文档</h3><ul><li>完成对AWR报告的分析</li><li>制定POC方案</li></ul><h3 id="向张sir-讨教了公众号运营心得"><a href="#向张sir-讨教了公众号运营心得" class="headerlink" title="向张sir 讨教了公众号运营心得"></a>向张sir 讨教了公众号运营心得</h3><ul><li>目前阶段，可以通过 互推/踩热点 来引流</li><li>踩热点要能够抓住关键词</li></ul>]]></content>
     
