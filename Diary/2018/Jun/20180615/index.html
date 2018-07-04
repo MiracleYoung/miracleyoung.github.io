@@ -21,10 +21,6 @@
 <meta name="twitter:title" content="Dairy 20180615">
 <meta name="twitter:description" content="20180614Daily 学习《Python Data Structure》3.10 - 3.24  Tech队列 FIFO，先进先出的有序集合 添加项的一端是队尾，删除项的一端是队首 Queue() enqueue() dequeue() size() is_empty()   约瑟夫问题，有n个人，按m报数，第m个人自杀，直到最后一个  打印机队列 有1台打印机每分钟打印k张纸，n个学生每个">
   
-    <link rel="alternative" href="/atom.xml" title="Miracle Blog" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
   <style type="text/css">
@@ -36,6 +32,16 @@
   
 
   
+<script>
+var _hmt = _hmt || [];
+(function() {
+	var hm = document.createElement("script");
+	hm.src = "https://hm.baidu.com/hm.js?a30844fa2bcbce0a9e001fe06cefeddf";
+	var s = document.getElementsByTagName("script")[0]; 
+	s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
 
 </head>
 
@@ -47,11 +53,11 @@
 <div class="overlay" style="background: #4d4d4d"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
-		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+		<a href="" class="profilepic">
+			<img src="/assets/img/avatar.jpeg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">Miracle.Young/上海小胖</a></h1>
+		  <h1 class="header-author"><a href="">Miracle.Young/上海小胖</a></h1>
 		</hgroup>
 		
 		<p class="header-subtitle">One tech boy blog</p>
@@ -62,7 +68,7 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/随笔/">随笔</a></li>
+				<li><a href="/photos">相册</a></li>
 	        
 			</ul>
 		</nav>
@@ -73,8 +79,6 @@
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
-    			
             
     			
     			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
@@ -84,13 +88,13 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="https://github.com/miracleyoung" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+					<a class="rss" target="_blank" href="/atom.xml" title="rss"><i class="icon-rss"></i></a>
 		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+					<a class="segmentfault" target="_blank" href="https://segmentfault.com/u/shanghaixiaopang" title="segmentfault"><i class="icon-segmentfault"></i></a>
 		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="mail" target="_blank" href="mailto:miracleyoung0723@gmail.com" title="mail"><i class="icon-mail"></i></a>
 		        
 			</div>
 		</nav>
@@ -108,7 +112,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="/assets/img/avatar.jpeg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Miracle.Young/上海小胖</h1>
@@ -127,13 +131,13 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://github.com/miracleyoung" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+						<a class="rss" target="_blank" href="/atom.xml" title="rss"><i class="icon-rss"></i></a>
 			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+						<a class="segmentfault" target="_blank" href="https://segmentfault.com/u/shanghaixiaopang" title="segmentfault"><i class="icon-segmentfault"></i></a>
 			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="mail" target="_blank" href="mailto:miracleyoung0723@gmail.com" title="mail"><i class="icon-mail"></i></a>
 			        
 				</div>
 			</nav>
@@ -144,7 +148,7 @@
 				
 					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
+					<li style="width: 50%"><a href="/photos">相册</a></li>
 		        
 				</ul>
 			</nav>
@@ -252,27 +256,6 @@
 
       
 
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>如果觉得文章好的话，请我吃颗糖呗<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -432,7 +415,7 @@
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: false,
+		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
@@ -456,8 +439,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
     
       
-      
-      
     
       
       
@@ -469,15 +450,13 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -540,38 +519,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     	</section>
     
 
-    
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
     
 
     
