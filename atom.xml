@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-05T15:04:55.483Z</updated>
+  <updated>2018-07-05T15:11:20.847Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://yoursite.com/Diary/20180705/"/>
     <id>http://yoursite.com/Diary/20180705/</id>
     <published>2018-07-05T14:30:17.000Z</published>
-    <updated>2018-07-05T15:04:55.483Z</updated>
+    <updated>2018-07-05T15:11:20.847Z</updated>
     
-    <content type="html"><![CDATA[<ul><li>初识Spark</li><li>公众号运营</li></ul><a id="more"></a><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>感觉有好多东西要做，记了个list，觉得还是蛮有用的，起码知道自己还要看什么。</p><p>然后就是利用mac的日记了，真的蛮好，从今天往后，准备每周日规划下一周的工作和学习安排。</p><p>我是个生物钟在白天而不是晚上的人，所以准备在早上学习，把工作放在下午。</p><p>除了工作和学习外，要学会合理安排空余时间</p><ul><li>公众号</li><li>写代码<ul><li>MagCore 客户端</li><li>WX_QQ_Robot</li></ul></li><li>陪家人</li></ul><p>感觉每天只要学习完了，后面的事情都不是重点了。。。好像也不是，还有晚上的时间也蛮重要的。</p>]]></content>
+    <content type="html"><![CDATA[<ul><li>初识Spark</li><li>公众号运营</li></ul><a id="more"></a><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>终于搞定GithubPages，采用yilia主题，查找文档，github api 文档，完成个人博客迁移！</p><ul><li>yilia的config文件定义github oauth的地方需要注意<ul><li><code>gitment_owner</code> 这里填的是你的用户名，比如我的是<code>miracleyoung</code>，就是github仓库的前缀</li><li><code>gitment_repo</code> 填的也不是完整url，就是你的仓库，比如我的是<code>miracleyoung.github.io</code></li><li>其他看yilia文档就都ok</li></ul></li></ul><p>感觉有好多东西要做，记了个list，觉得还是蛮有用的，起码知道自己还要看什么。</p><p>然后就是利用mac的日记了，真的蛮好，从今天往后，准备每周日规划下一周的工作和学习安排。</p><p>我是个生物钟在白天而不是晚上的人，所以准备在早上学习，把工作放在下午。</p><p>除了工作和学习外，要学会合理安排空余时间</p><ul><li>公众号</li><li>写代码<ul><li>MagCore 客户端</li><li>WX_QQ_Robot</li></ul></li><li>陪家人</li></ul><p>感觉每天只要学习完了，后面的事情都不是重点了。。。好像也不是，还有晚上的时间也蛮重要的。</p>]]></content>
     
     <summary type="html">
     
