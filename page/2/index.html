@@ -6,20 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Dairy 20180605 | Miracle Blog</title>
+  <title>Miracle Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="上午去浦发信用卡中心面试了，太早过去，期间一直刷手机，主要还是因为没有联系上人，所以下次一定要保留hr联系方式，避免早到、临时有事无法联系。之后和部门老大聊，似乎没有聊什么技术，后面得知面的是个应用运维岗位，有点不太匹配，以后面试前，一定要对岗位职责定性，免去徒劳的奔波。 12点吃饭，睡到1:45，2点开始学习，这个时间可以缩短，以后 吃饭到1点，回来手机消息扫一下，就可以直接休息了，不用刷到1">
-<meta name="keywords" content="Dairy">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Dairy 20180605">
-<meta property="og:url" content="http://yoursite.com/Diary/20180605/index.html">
+  <meta name="description" content="Miracle 的博客,python,mongo,redis,mysql,web,elk,cloud,data,blog">
+<meta name="keywords" content="python,mongo,redis,mysql,web,elk,cloud,data,blog">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Miracle Blog">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
 <meta property="og:site_name" content="Miracle Blog">
-<meta property="og:description" content="上午去浦发信用卡中心面试了，太早过去，期间一直刷手机，主要还是因为没有联系上人，所以下次一定要保留hr联系方式，避免早到、临时有事无法联系。之后和部门老大聊，似乎没有聊什么技术，后面得知面的是个应用运维岗位，有点不太匹配，以后面试前，一定要对岗位职责定性，免去徒劳的奔波。 12点吃饭，睡到1:45，2点开始学习，这个时间可以缩短，以后 吃饭到1点，回来手机消息扫一下，就可以直接休息了，不用刷到1">
+<meta property="og:description" content="Miracle 的博客,python,mongo,redis,mysql,web,elk,cloud,data,blog">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-07-05T15:04:46.189Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Dairy 20180605">
-<meta name="twitter:description" content="上午去浦发信用卡中心面试了，太早过去，期间一直刷手机，主要还是因为没有联系上人，所以下次一定要保留hr联系方式，避免早到、临时有事无法联系。之后和部门老大聊，似乎没有聊什么技术，后面得知面的是个应用运维岗位，有点不太匹配，以后面试前，一定要对岗位职责定性，免去徒劳的奔波。 12点吃饭，睡到1:45，2点开始学习，这个时间可以缩短，以后 吃饭到1点，回来手机消息扫一下，就可以直接休息了，不用刷到1">
+<meta name="twitter:title" content="Miracle Blog">
+<meta name="twitter:description" content="Miracle 的博客,python,mongo,redis,mysql,web,elk,cloud,data,blog">
   
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
@@ -159,14 +158,16 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-20180605" class="article article-type-post " itemscope itemprop="blogPost">
+            
+  
+    <article id="post-20180605" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      Dairy 20180605
+    <h1 itemprop="name">
+      <a class="article-title" href="/Diary/20180605/">Dairy 20180605</a>
     </h1>
   
 
@@ -186,51 +187,11 @@ var _hmt = _hmt || [];
 <li>之后开始看celery。并没有开始写，已经安装完环境，明天就可以写代码了。</li>
 <li>Docker/k8s 这个是现在的技术趋势，需要去看，可以调整一下，把celery放一下，把docker看掉。本周的重点，<strong>docker</strong>。</li>
 </ul>
-<a id="more"></a>
-<h2 id="Tech"><a href="#Tech" class="headerlink" title="Tech"></a>Tech</h2><h3 id="GIL"><a href="#GIL" class="headerlink" title="GIL"></a>GIL</h3><ul>
-<li>python 的GIL是针对Cython的，python的默认解释器，使用c语言实现。由于大多数的第三方扩展都依赖于GIL，所以Cython也就被使用最多。</li>
-<li>GIL的存在是为了给线程分配执行权限，只有拿到GIL锁的线程才能够执行逻辑。</li>
-<li>Cython解释器对GIL的分配做了一些限制，每个线程能够执行的指令次数默认为100，则被迫交出GIL，在最新的python3.6中，已经修复为刚交出GIL的线程不会再争夺到GIL。以保证尽可能多的线程执行过。</li>
-</ul>
-<h3 id="多线程和多进程"><a href="#多线程和多进程" class="headerlink" title="多线程和多进程"></a>多线程和多进程</h3><ul>
-<li>多线程作用于IO密集型，多进程作用于CPU密集型</li>
-<li>IO密集型操作，瓶颈在IO，所以指令集下达后，线程会有hang住的情况，此时采用多线程，可以有效的利用其他线程的并发。</li>
-<li>CPU密集型操作，瓶颈在CPU，需要大量计算，类似数据矩阵计算、循环遍历等，这个时候线程并没有等待，反倒是不断的切换线程所带来的开销更大了。</li>
-</ul>
-
+        
+          <a class="article-more-a" href="/Diary/20180605/#more">more >></a>
+        
       
 
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/assets/img/alipay.jpeg">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/assets/img/wxpay.jpeg">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -261,79 +222,16 @@ var _hmt = _hmt || [];
 
 
       
-
+        <p class="article-more-link">
+          <a class="article-more-a" href="/Diary/20180605/">展开全文 >></a>
+        </p>
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
 
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/Diary/20180605/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/Diary/20180606/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Dairy 20180606
-        
-      </div>
-    </a>
-  
-  
-</nav>
-
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -353,30 +251,12 @@ var _hmt = _hmt || [];
 
 
 
-  
-  
-  
 
   
-
   
-
-  
-  <div id="gitment-ctn"></div> 
-<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
-<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  id: "http://yoursite.com/Diary/20180605/",
-  owner: 'miracleyoung',
-  repo: 'miracleyoung.github.io',
-  oauth: {
-    client_id: '8681ad25509ec2d7cd7c',
-    client_secret: 'eb83cb588b830be54a44e7e99fcc8efd486c757b',
-  },
-})
-gitment.render('gitment-ctn')
-</script>
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </nav>
   
 
 
@@ -399,8 +279,8 @@ gitment.render('gitment-ctn')
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: false,
-		isPost: true,
+		isHome: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

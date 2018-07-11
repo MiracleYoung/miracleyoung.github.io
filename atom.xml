@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-08T00:30:15.360Z</updated>
+  <updated>2018-07-11T14:22:06.862Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Bash快捷键</title>
+    <link href="http://yoursite.com/%E5%BF%AB%E6%8D%B7%E9%94%AE/Bash%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    <id>http://yoursite.com/快捷键/Bash快捷键/</id>
+    <published>2018-07-11T14:21:22.000Z</published>
+    <updated>2018-07-11T14:22:06.862Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="移动光标"><a href="#移动光标" class="headerlink" title="移动光标"></a>移动光标</h2><ul><li>ctrl+b: 前移一个字符(backward)</li><li>ctrl+f: 后移一个字符(forward)</li><li>alt+f: 后移一个单词</li><li>alt+b: 前移一个单词</li><li>ctrl+a: 移到行首（a是首字母）</li><li>ctrl+e: 移到行尾（end）</li><li>ctrl+xx: 行首到当前光标替换</li></ul><a id="more"></a><h2 id="编辑命令"><a href="#编辑命令" class="headerlink" title="编辑命令"></a>编辑命令</h2><ul><li>alt+.: 粘帖最后一次命令最后的参数（通常用于mkdir long-long-dir后, cd配合着alt+.）</li><li>alt+d: 删除当前光标到临近右边单词开始(delete)</li><li>ctrl+w: 删除当前光标到临近左边单词结束(word)</li><li>ctrl+h: 删除光标前一个字符（相当于backspace）</li><li>ctrl+d: 删除光标后一个字符（相当于delete）</li><li>ctrl+u: 删除光标左边所有</li><li>ctrl+k: 删除光标右边所有</li><li>ctrl+l: 清屏</li><li>ctrl+shift+c: 复制（相当于鼠标左键拖拽）</li><li>ctrl+shift+v: 粘贴（相当于鼠标中键）</li></ul><h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><ul><li>ctrl+n: 下一条命令</li><li>ctrl+p: 上一条命令</li><li>alt+n: 下一条命令（例如输入ls, 然后按’alt+n’, 就会找到历史记录下的ls命令）</li><li>alt+p: 上一条命令（跟alt+n相似）</li><li>shift+PageUp: 向上翻页</li><li>shift+PageDown: 向下翻页</li><li>ctrl+r: 进入历史查找命令记录， 输入关键字。 多次按返回下一个匹配项</li></ul><h2 id="zsh"><a href="#zsh" class="headerlink" title="zsh"></a>zsh</h2><ul><li>d: 列出以前的打开的命令</li><li>j: jump到以前某个目录，模糊匹配</li></ul><h2 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h2><h3 id="移动光标-1"><a href="#移动光标-1" class="headerlink" title="移动光标"></a>移动光标</h3><ul><li>b: 向前移动一个单词</li><li>w: 向后移动一个单词<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3></li><li>dw: 从当前光标开始删除到下一个单词头</li><li>de: 从当前光标开始删除到单词尾</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;移动光标&quot;&gt;&lt;a href=&quot;#移动光标&quot; class=&quot;headerlink&quot; title=&quot;移动光标&quot;&gt;&lt;/a&gt;移动光标&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;ctrl+b: 前移一个字符(backward)&lt;/li&gt;
+&lt;li&gt;ctrl+f: 后移一个字符(forward)&lt;/li&gt;
+&lt;li&gt;alt+f: 后移一个单词&lt;/li&gt;
+&lt;li&gt;alt+b: 前移一个单词&lt;/li&gt;
+&lt;li&gt;ctrl+a: 移到行首（a是首字母）&lt;/li&gt;
+&lt;li&gt;ctrl+e: 移到行尾（end）&lt;/li&gt;
+&lt;li&gt;ctrl+xx: 行首到当前光标替换&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="快捷键" scheme="http://yoursite.com/categories/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    
+    
+      <category term="快捷键" scheme="http://yoursite.com/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>2018上半年复盘</title>
