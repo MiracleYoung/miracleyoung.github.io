@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/%E6%8A%80%E6%9C%AF/Python%E6%9E%9A%E4%B8%BE%E7%B1%BB%E5%9E%8B/</loc>
+    
+    <lastmod>2018-07-18T15:18:39.181Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/%E5%BF%AB%E6%8D%B7%E9%94%AE/Bash%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
     
     <lastmod>2018-07-11T14:22:06.862Z</lastmod>

@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2018/6 | Miracle Blog</title>
+  <title>Python枚举类型 | Miracle Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Miracle 的博客,python,mongo,redis,mysql,web,elk,cloud,data,blog">
-<meta name="keywords" content="python,mongo,redis,mysql,web,elk,cloud,data,blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Miracle Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2018/06/index.html">
+  <meta name="description" content="枚举类型可以看作是一种标签或是一系列常量的集合，通常用于表示某些特定的有限集合，例如星期、月份、状态等。 Python 的原生类型（Built-in types）里并没有专门的枚举类型，但是我们可以通过很多方法来实现它，例如字典、类等：12345678MiracleLove = &amp;#123;&apos;MON&apos;: &apos;林志玲&apos;, &apos;TUS&apos;: &apos;陈意涵&apos;, &apos;WEN&apos;: &apos;张柏芝&apos;, &apos;THU&apos;: &apos;辛芷蕾&apos;">
+<meta name="keywords" content="技术">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python枚举类型">
+<meta property="og:url" content="http://yoursite.com/技术/Python枚举类型/index.html">
 <meta property="og:site_name" content="Miracle Blog">
-<meta property="og:description" content="Miracle 的博客,python,mongo,redis,mysql,web,elk,cloud,data,blog">
+<meta property="og:description" content="枚举类型可以看作是一种标签或是一系列常量的集合，通常用于表示某些特定的有限集合，例如星期、月份、状态等。 Python 的原生类型（Built-in types）里并没有专门的枚举类型，但是我们可以通过很多方法来实现它，例如字典、类等：12345678MiracleLove = &amp;#123;&apos;MON&apos;: &apos;林志玲&apos;, &apos;TUS&apos;: &apos;陈意涵&apos;, &apos;WEN&apos;: &apos;张柏芝&apos;, &apos;THU&apos;: &apos;辛芷蕾&apos;">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-07-18T15:18:39.181Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Miracle Blog">
-<meta name="twitter:description" content="Miracle 的博客,python,mongo,redis,mysql,web,elk,cloud,data,blog">
+<meta name="twitter:title" content="Python枚举类型">
+<meta name="twitter:description" content="枚举类型可以看作是一种标签或是一系列常量的集合，通常用于表示某些特定的有限集合，例如星期、月份、状态等。 Python 的原生类型（Built-in types）里并没有专门的枚举类型，但是我们可以通过很多方法来实现它，例如字典、类等：12345678MiracleLove = &amp;#123;&apos;MON&apos;: &apos;林志玲&apos;, &apos;TUS&apos;: &apos;陈意涵&apos;, &apos;WEN&apos;: &apos;张柏芝&apos;, &apos;THU&apos;: &apos;辛芷蕾&apos;">
   
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
@@ -158,365 +159,221 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Python枚举类型" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Python枚举类型
+    </h1>
+  
+
+        
+        <a href="/技术/Python枚举类型/" class="archive-article-date">
+  	<time datetime="2018-07-18T15:09:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-18</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>枚举类型可以看作是一种标签或是一系列常量的集合，通常用于表示某些特定的有限集合，例如星期、月份、状态等。</p>
+<p>Python 的原生类型（Built-in types）里并没有专门的枚举类型，但是我们可以通过很多方法来实现它，例如字典、类等：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">MiracleLove = &#123;<span class="string">'MON'</span>: <span class="string">'林志玲'</span>, <span class="string">'TUS'</span>: <span class="string">'陈意涵'</span>, <span class="string">'WEN'</span>: <span class="string">'张柏芝'</span>, <span class="string">'THU'</span>: <span class="string">'辛芷蕾'</span>, <span class="string">'FRI'</span>: <span class="string">'周冬雨'</span>&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MiracleLove</span>:</span></span><br><span class="line">   MON = <span class="string">'林志玲'</span></span><br><span class="line">   TUS = <span class="string">'陈意涵'</span></span><br><span class="line">   WEN = <span class="string">'张柏芝'</span></span><br><span class="line">   THU = <span class="string">'辛芷蕾'</span></span><br><span class="line">   FRI = <span class="string">'周冬雨'</span></span><br></pre></td></tr></table></figure></p>
+<p>上面两种方法可以看做是简单的枚举类型的实现。</p>
+<p>如果只在局部范围内用到了这样的枚举变量是没有问题的。</p>
+<p>但问题在于它们都是可变的（mutable），也就是说可以在其它地方被修改从而影响其正常使用：</p>
+<a id="more"></a>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">MiracleLove[<span class="string">'MON'</span>] = MiracleLove[<span class="string">'FRI'</span>]</span><br><span class="line">print(MiracleLove)</span><br></pre></td></tr></table></figure>
+<p>通过类定义的枚举甚至可以实例化，变得不伦不类：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ml = MiracleLove()</span><br><span class="line">print(ml.MON)</span><br><span class="line"></span><br><span class="line">MiracleLove.MON = <span class="number">2</span></span><br><span class="line">print(ml.MON)</span><br></pre></td></tr></table></figure></p>
+<p>当然也可以使用不可变类型（immutable），例如元组，但是这样就失去了枚举类型的本意，将标签退化为无意义的变量：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">MiracleLove = (<span class="string">'R'</span>, <span class="string">'G'</span>, <span class="string">'B'</span>)</span><br><span class="line">print(MiracleLove[<span class="number">0</span>], MiracleLove[<span class="number">1</span>], MiracleLove[<span class="number">2</span>])</span><br></pre></td></tr></table></figure></p>
+<p>为了提供更好的解决方案，Python 通过 PEP 435 在 3.4 版本中添加了 enum 标准库，3.4 之前的版本也可以通过 pip install enum 下载兼容支持的库。<br>enum 提供了 Enum/IntEnum/unique 三个工具，用法也非常简单，可以通过继承 Enum/IntEnum 定义枚举类型，其中 IntEnum 限定枚举成员必须为（或可以转化为）整数类型，而 unique 方法可以作为修饰器限定枚举成员的值不可重复：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> enum <span class="keyword">import</span> Enum, IntEnum, unique</span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line"><span class="meta">   @unique</span></span><br><span class="line">   <span class="class"><span class="keyword">class</span> <span class="title">MiracleLove</span><span class="params">(Enum)</span>:</span></span><br><span class="line">       MON = <span class="string">'林志玲'</span></span><br><span class="line">       TUS = <span class="string">'陈意涵'</span></span><br><span class="line">       WEN = <span class="string">'张柏芝'</span></span><br><span class="line">       THU = <span class="string">'辛芷蕾'</span></span><br><span class="line">       FRI = <span class="string">'周冬雨'</span></span><br><span class="line"><span class="keyword">except</span> ValueError <span class="keyword">as</span> e:</span><br><span class="line">   print(e)</span><br><span class="line">   </span><br><span class="line"><span class="comment"># duplicate values found in &lt;enum 'MiracleLove'&gt;: FRI -&gt; MON</span></span><br></pre></td></tr></table></figure></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">   <span class="class"><span class="keyword">class</span> <span class="title">MiracleLove</span><span class="params">(IntEnum)</span>:</span></span><br><span class="line">       MON = <span class="number">1</span></span><br><span class="line">       TUS = <span class="number">2</span></span><br><span class="line">       WEN = <span class="number">3</span></span><br><span class="line">       THU = <span class="number">4</span></span><br><span class="line">       FRI = <span class="string">'周冬雨'</span></span><br><span class="line"><span class="keyword">except</span> ValueError <span class="keyword">as</span> e:</span><br><span class="line">   print(e)</span><br><span class="line"></span><br><span class="line"><span class="comment"># invalid literal for int() with base 10: '周冬雨'</span></span><br></pre></td></tr></table></figure>
+<p>更有趣的是 Enum 的成员均为单例（Singleton），并且不可实例化，不可更改：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MiracleLove</span><span class="params">(Enum)</span>:</span></span><br><span class="line">   MON = <span class="string">'林志玲'</span></span><br><span class="line">   TUS = <span class="string">'陈意涵'</span></span><br><span class="line">   WEN = <span class="string">'张柏芝'</span></span><br><span class="line">   THU = <span class="string">'辛芷蕾'</span></span><br><span class="line">   FRI = <span class="string">'周冬雨'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">   MiracleLove.MON = <span class="number">2</span></span><br><span class="line"><span class="keyword">except</span> AttributeError <span class="keyword">as</span> e:</span><br><span class="line">   print(e)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Cannot reassign members.</span></span><br></pre></td></tr></table></figure></p>
+<p>虽然不可实例化，但可以将枚举成员赋值给变量：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">mon = MiracleLove(<span class="number">0</span>)</span><br><span class="line">tus = MiracleLove(<span class="number">1</span>)</span><br><span class="line">wen = MiracleLove(<span class="number">2</span>)</span><br><span class="line">print(mon, tus, wen)</span><br><span class="line"></span><br><span class="line"><span class="comment"># MiracleLove.MON </span></span><br><span class="line"><span class="comment"># MiracleLove.TUS </span></span><br><span class="line"><span class="comment"># MiracleLove.WEN</span></span><br></pre></td></tr></table></figure></p>
+<p>也可以进行比较判断：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">print(mon <span class="keyword">is</span> MiracleLove.MON)</span><br><span class="line">print(mon == MiracleLove.MON)</span><br><span class="line">print(mon <span class="keyword">is</span> tus)</span><br><span class="line">print(wen != MiracleLove.TUS)</span><br><span class="line">print(mon == <span class="number">0</span>) <span class="comment"># 不等于任何非本枚举类的值</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># True</span></span><br><span class="line"><span class="comment"># True</span></span><br><span class="line"><span class="comment"># False</span></span><br><span class="line"><span class="comment"># True</span></span><br><span class="line"><span class="comment"># False</span></span><br></pre></td></tr></table></figure></p>
+<p>最后一点，由于枚举成员本身也是枚举类型，因此也可以通过枚举成员找到其它成员：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">print(mon.TUS)</span><br><span class="line">print(mon.TUS.WEN.MON)</span><br><span class="line"></span><br><span class="line"><span class="comment"># MiracleLove.TUS</span></span><br><span class="line"><span class="comment"># MiracleLove.MON</span></span><br></pre></td></tr></table></figure></p>
+<p>但是要谨慎使用这一特性，因为可能与成员原有的命名空间中的名称相冲突：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">print(mon.name, <span class="string">':'</span>, mon.value)</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Attr</span><span class="params">(Enum)</span>:</span></span><br><span class="line">   name  = <span class="string">'NAME'</span></span><br><span class="line">   value = <span class="string">'VALUE'</span></span><br><span class="line"></span><br><span class="line">print(Attr.name.value, Attr.value.name)</span><br><span class="line"></span><br><span class="line"><span class="comment"># R : 0</span></span><br><span class="line"><span class="comment"># NAME value</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h3><hr>
+<p>enum 模块的用法很简单，功能也很明确，但是其实现方式却非常值得学习。如果你想更深入了解更多 Python 中关于 Class 和 Metaclass 的黑魔法，又不知道如何入手，那么不妨阅读一下 enum 的源码。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.jpeg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/wxpay.jpeg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/Diary/20180628/" class="archive-article-date">
-  	<time datetime="2018-06-29T14:36:00.298Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/Diary/20180628/">Dairy 20180628</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Dairy</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/Diary//" class="article-tag-list-link color1">Diary</a>
+        			<a href="/categories/技术//" class="article-tag-list-link color3">技术</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/技术/Python枚举类型/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/Diary/20180624/" class="archive-article-date">
-  	<time datetime="2018-06-26T13:11:47.486Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-26</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/快捷键/Bash快捷键/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Bash快捷键</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/Diary/20180624/">Dairy 20180624</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Dairy</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Diary//" class="article-tag-list-link color1">Diary</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/Diary/20180617/" class="archive-article-date">
-  	<time datetime="2018-06-17T23:01:38.849Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/Diary/20180617/">Dairy 20180617</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Dairy</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Diary//" class="article-tag-list-link color1">Diary</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/Diary/20180615/" class="archive-article-date">
-  	<time datetime="2018-06-17T06:20:10.327Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/Diary/20180615/">Dairy 20180615</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Dairy</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Diary//" class="article-tag-list-link color1">Diary</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/Diary/20180614/" class="archive-article-date">
-  	<time datetime="2018-06-14T22:03:36.401Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-15</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/Diary/20180614/">Dairy 20180614</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Dairy</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Diary//" class="article-tag-list-link color1">Diary</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/Diary/20180606/" class="archive-article-date">
-  	<time datetime="2018-06-06T14:38:08.873Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/Diary/20180606/">Dairy 20180606</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Dairy</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Diary//" class="article-tag-list-link color1">Diary</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/Diary/20180605/" class="archive-article-date">
-  	<time datetime="2018-06-05T21:56:08.874Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/Diary/20180605/">Dairy 20180605</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Dairy</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Diary//" class="article-tag-list-link color1">Diary</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "http://yoursite.com/技术/Python枚举类型/",
+  owner: 'miracleyoung',
+  repo: 'miracleyoung.github.io',
+  oauth: {
+    client_id: '8681ad25509ec2d7cd7c',
+    client_secret: 'eb83cb588b830be54a44e7e99fcc8efd486c757b',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+  
 
 
           </div>
@@ -539,8 +396,8 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
