@@ -6,19 +6,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Category: Diary | Miracle Blog</title>
+  <title>Docker介绍及基本使用 | Miracle Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Miracle 的博客,python,mongo,redis,mysql,web,elk,cloud,data,blog">
-<meta name="keywords" content="python,mongo,redis,mysql,web,elk,cloud,data,blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Miracle Blog">
-<meta property="og:url" content="http://yoursite.com/categories/Diary/index.html">
+  <meta name="description" content="很久没写博客了，真的不好，今天就当是一个新的开始。 终于有时间可以静下心来完整的看一遍Docker了，之前都是自己瞎玩，感觉差的不是一点两点，今天看了马哥的Docker容器第一章和第二章收获确实颇多。 Docker的概念Docker也是一个虚拟化的技术，相较于传统的VirtualMachine，区别是VMs是需要一个完整的操作系统，无论你要运行单一的Nginx又或者是多个MySQL实例，你都需要先">
+<meta name="keywords" content="技术">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Docker介绍及基本使用">
+<meta property="og:url" content="http://yoursite.com/技术/Docker介绍及基本使用/index.html">
 <meta property="og:site_name" content="Miracle Blog">
-<meta property="og:description" content="Miracle 的博客,python,mongo,redis,mysql,web,elk,cloud,data,blog">
+<meta property="og:description" content="很久没写博客了，真的不好，今天就当是一个新的开始。 终于有时间可以静下心来完整的看一遍Docker了，之前都是自己瞎玩，感觉差的不是一点两点，今天看了马哥的Docker容器第一章和第二章收获确实颇多。 Docker的概念Docker也是一个虚拟化的技术，相较于传统的VirtualMachine，区别是VMs是需要一个完整的操作系统，无论你要运行单一的Nginx又或者是多个MySQL实例，你都需要先">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNbRwgy1fw4p8ohd7qj31kw09an0o.jpg">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNbRwgy1fw4pbpiwznj31460i8wgz.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNbRwgy1fw4p8ohd7qj31kw09an0o.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNbRwgy1fw4plrxnukj30w40h0myr.jpg">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNbRwgy1fw4pltr77aj314s0xatda.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNbRwgy1fw4plv5oldj30rm10ogq8.jpg">
+<meta property="og:updated_time" content="2018-10-11T15:40:51.870Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Miracle Blog">
-<meta name="twitter:description" content="Miracle 的博客,python,mongo,redis,mysql,web,elk,cloud,data,blog">
+<meta name="twitter:title" content="Docker介绍及基本使用">
+<meta name="twitter:description" content="很久没写博客了，真的不好，今天就当是一个新的开始。 终于有时间可以静下心来完整的看一遍Docker了，之前都是自己瞎玩，感觉差的不是一点两点，今天看了马哥的Docker容器第一章和第二章收获确实颇多。 Docker的概念Docker也是一个虚拟化的技术，相较于传统的VirtualMachine，区别是VMs是需要一个完整的操作系统，无论你要运行单一的Nginx又或者是多个MySQL实例，你都需要先">
+<meta name="twitter:image" content="https://ws2.sinaimg.cn/large/006tNbRwgy1fw4p8ohd7qj31kw09an0o.jpg">
   
   
     <link rel="icon" href="/assets/img/favicon.ico">
@@ -160,512 +168,219 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Docker介绍及基本使用" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Docker介绍及基本使用
+    </h1>
+  
+
+        
+        <a href="/技术/Docker介绍及基本使用/" class="archive-article-date">
+  	<time datetime="2018-10-11T15:03:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-11</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>很久没写博客了，真的不好，今天就当是一个新的开始。</p>
+<p>终于有时间可以静下心来完整的看一遍Docker了，之前都是自己瞎玩，感觉差的不是一点两点，今天看了马哥的Docker容器第一章和第二章收获确实颇多。</p>
+<h2 id="Docker的概念"><a href="#Docker的概念" class="headerlink" title="Docker的概念"></a>Docker的概念</h2><p>Docker也是一个虚拟化的技术，相较于传统的VirtualMachine，区别是VMs是需要一个完整的操作系统，无论你要运行单一的Nginx又或者是多个MySQL实例，你都需要先安装一个虚拟操作系统，然后在其之上搭建服务。另外，如果你需要多个服务进行隔离，互不干扰，那么就需要使用到隔离技术，隔离技术早就有了，不过这并不是Docker。<br>那么Docker是什么呢？Docker是一个把服务单一化，独立于操作系统的虚拟化技术。举个例子就能理解了：如果我要在Docker里运行Nginx，那么这个Docker里就只跑了一个Nginx，是只有一个Nginx，连PID=1 的那个init都没有，取而代之的是PID=1的Nginx服务。</p>
+<h2 id="Docker的组件"><a href="#Docker的组件" class="headerlink" title="Docker的组件"></a>Docker的组件</h2><p>Docker的组件有很多，不过今天就学了3种：Container（容器）、Image（镜像）、Registry（仓库）。</p>
+<p>什么区别呢？一个个说。</p>
+<p>仓库存储着大量的镜像，每一个镜像都是一个类，而容器就是一个个具体的实例，可以理解为是实例化了。就好像你安装了MySQL，但没有运行MySQL实例，这个时候服务是不存在的，这就是镜像，镜像只是一个静态的东西，需要你去实例化镜像，实例化出来的东西就叫容器。</p>
+<p>仓库里有许多的镜像，例如：Nginx、MySQL等。一个Nginx服务包含很多个版本，相同的版本还有stable、release、alpine等，所以一个仓库下包含着许多的镜像。<br>为了区分他们，命名规则上做出了规范：从仓库中获取一个具体的镜像，需要这么称呼他：<code>nginx:1.14-alpine</code>，这样就能找到唯一的镜像了。</p>
+<h2 id="Docker的基本操作"><a href="#Docker的基本操作" class="headerlink" title="Docker的基本操作"></a>Docker的基本操作</h2><p>Docker发展到现在，已经相当不错了，在命令行里也已经组件化了，我是Mac，所以直接安装的Docker for Mac。安装完后就可以直接使用了。</p>
+<ul>
+<li><code>docker pull nginx:1.14-alpine</code>：从仓库中拉取一个nginx，版本号是1.14-alpine</li>
+<li><code>docker run --name web1 -d nginx:1.14-alpine</code>： -d 参数代表使用daemon的方式启动docker，–name 表示指定该container的名字，最后的nginx:1.14-alpine代表这个容器所使用的镜像名字。<br>我们可以通过 <code>docker container ps</code> 来查看当前docker的运行状况<br><img src="https://ws2.sinaimg.cn/large/006tNbRwgy1fw4p8ohd7qj31kw09an0o.jpg" alt="docker container ps"></li>
+<li><code>docker exec -it web1 /bin/sh</code>：exec 表示进入docker container里面去，-it的意思就是交互式操作，web1就是进入到名字叫web1的container里去，最后的/bin/sh 就是以什么样的方式进入，如果你是一个echo，就直接输出了<br><img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fw4pbpiwznj31460i8wgz.jpg" alt="docker exec -it web1 /bin/sh"><br><img src="https://ws2.sinaimg.cn/large/006tNbRwgy1fw4p8ohd7qj31kw09an0o.jpg" alt="docker exec -it web1 echo 1"></li>
+</ul>
+<p>但是在这里会有一个坑，也是我希望记录下来的，在Mac中，1024端口以下是需要sudo权限的，而linux没有，所以在视频中，启动了nginx后，是可以在外部使用内网ip:port的方式访问到这个nginx的，而我却不行，之后查阅文档，发现run是有一个端口映射参数的，加上去就好了。<br><code>docker run -p 8080:80 --name web1 -d nginx:1.14-alpine</code>：这里，把container中的80端口映射到我本地的8080端口。</p>
+<p>通过命令<code>docker inspect web1</code> 查看web1容器的详细情况：<br><img src="https://ws1.sinaimg.cn/large/006tNbRwgy1fw4plrxnukj30w40h0myr.jpg" alt="docker inspect web1"><br><img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fw4pltr77aj314s0xatda.jpg" alt="docker inspect web1"></p>
+<p>这样子，就可以本地访问到了。<br><img src="https://ws1.sinaimg.cn/large/006tNbRwgy1fw4plv5oldj30rm10ogq8.jpg" alt="docker run -p 8080:80 --name web1 -d nginx:1.14-alpine"></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.jpeg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/wxpay.jpeg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/Diary/2018上半年复盘/" class="archive-article-date">
-  	<time datetime="2018-07-08T00:29:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-08</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/Diary/2018上半年复盘/">2018上半年复盘</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Dairy</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/Diary//" class="article-tag-list-link color1">Diary</a>
+        			<a href="/categories/技术//" class="article-tag-list-link color3">技术</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/技术/Docker介绍及基本使用/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/Diary/20180705/" class="archive-article-date">
-  	<time datetime="2018-07-05T14:30:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-05</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/杂谈/平安金融程序员打架/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">平安金融程序员打架</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/Diary/20180705/">Dairy 20180705</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Dairy</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Diary//" class="article-tag-list-link color1">Diary</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/Diary/20180701/" class="archive-article-date">
-  	<time datetime="2018-07-01T00:06:22.746Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/Diary/20180701/">Dairy 20180701</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Dairy</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Diary//" class="article-tag-list-link color1">Diary</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/Diary/20180628/" class="archive-article-date">
-  	<time datetime="2018-06-29T14:36:00.298Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/Diary/20180628/">Dairy 20180628</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Dairy</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Diary//" class="article-tag-list-link color1">Diary</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/Diary/20180624/" class="archive-article-date">
-  	<time datetime="2018-06-26T13:11:47.486Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-26</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/Diary/20180624/">Dairy 20180624</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Dairy</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Diary//" class="article-tag-list-link color1">Diary</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/Diary/20180617/" class="archive-article-date">
-  	<time datetime="2018-06-17T23:01:38.849Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/Diary/20180617/">Dairy 20180617</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Dairy</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Diary//" class="article-tag-list-link color1">Diary</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/Diary/20180615/" class="archive-article-date">
-  	<time datetime="2018-06-17T06:20:10.327Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/Diary/20180615/">Dairy 20180615</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Dairy</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Diary//" class="article-tag-list-link color1">Diary</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/Diary/20180614/" class="archive-article-date">
-  	<time datetime="2018-06-14T22:03:36.401Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-15</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/Diary/20180614/">Dairy 20180614</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Dairy</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Diary//" class="article-tag-list-link color1">Diary</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/Diary/20180606/" class="archive-article-date">
-  	<time datetime="2018-06-06T14:38:08.873Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/Diary/20180606/">Dairy 20180606</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Dairy</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Diary//" class="article-tag-list-link color1">Diary</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/Diary/20180605/" class="archive-article-date">
-  	<time datetime="2018-06-05T21:56:08.874Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/Diary/20180605/">Dairy 20180605</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Dairy</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Diary//" class="article-tag-list-link color1">Diary</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "http://yoursite.com/技术/Docker介绍及基本使用/",
+  owner: 'miracleyoung',
+  repo: 'miracleyoung.github.io',
+  oauth: {
+    client_id: '8681ad25509ec2d7cd7c',
+    client_secret: 'eb83cb588b830be54a44e7e99fcc8efd486c757b',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+  
 
 
           </div>
@@ -688,10 +403,10 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
-		isCategory: true,
+		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
