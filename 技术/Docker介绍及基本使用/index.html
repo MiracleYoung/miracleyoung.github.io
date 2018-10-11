@@ -8,13 +8,13 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Docker介绍及基本使用 | Miracle Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="很久没写博客了，真的不好，今天就当是一个新的开始。 终于有时间可以静下心来完整的看一遍Docker了，之前都是自己瞎玩，感觉差的不是一点两点，今天看了马哥的Docker容器第一章和第二章收获确实颇多。 Docker的概念Docker也是一个虚拟化的技术，相较于传统的VirtualMachine，区别是VMs是需要一个完整的操作系统，无论你要运行单一的Nginx又或者是多个MySQL实例，你都需要先">
+  <meta name="description" content="很久没写博客了，真的不好，今天就当是一个新的开始。 终于有时间可以静下心来完整的看一遍Docker了，之前都是自己瞎玩，感觉差的不是一点两点，今天看了马哥的Docker容器第一章和第二章收获确实颇多。">
 <meta name="keywords" content="技术">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Docker介绍及基本使用">
 <meta property="og:url" content="http://yoursite.com/技术/Docker介绍及基本使用/index.html">
 <meta property="og:site_name" content="Miracle Blog">
-<meta property="og:description" content="很久没写博客了，真的不好，今天就当是一个新的开始。 终于有时间可以静下心来完整的看一遍Docker了，之前都是自己瞎玩，感觉差的不是一点两点，今天看了马哥的Docker容器第一章和第二章收获确实颇多。 Docker的概念Docker也是一个虚拟化的技术，相较于传统的VirtualMachine，区别是VMs是需要一个完整的操作系统，无论你要运行单一的Nginx又或者是多个MySQL实例，你都需要先">
+<meta property="og:description" content="很久没写博客了，真的不好，今天就当是一个新的开始。 终于有时间可以静下心来完整的看一遍Docker了，之前都是自己瞎玩，感觉差的不是一点两点，今天看了马哥的Docker容器第一章和第二章收获确实颇多。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNbRwgy1fw4p8ohd7qj31kw09an0o.jpg">
 <meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNbRwgy1fw4pbpiwznj31460i8wgz.jpg">
@@ -22,10 +22,10 @@
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNbRwgy1fw4plrxnukj30w40h0myr.jpg">
 <meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNbRwgy1fw4pltr77aj314s0xatda.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNbRwgy1fw4plv5oldj30rm10ogq8.jpg">
-<meta property="og:updated_time" content="2018-10-11T15:40:51.870Z">
+<meta property="og:updated_time" content="2018-10-11T15:42:54.955Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Docker介绍及基本使用">
-<meta name="twitter:description" content="很久没写博客了，真的不好，今天就当是一个新的开始。 终于有时间可以静下心来完整的看一遍Docker了，之前都是自己瞎玩，感觉差的不是一点两点，今天看了马哥的Docker容器第一章和第二章收获确实颇多。 Docker的概念Docker也是一个虚拟化的技术，相较于传统的VirtualMachine，区别是VMs是需要一个完整的操作系统，无论你要运行单一的Nginx又或者是多个MySQL实例，你都需要先">
+<meta name="twitter:description" content="很久没写博客了，真的不好，今天就当是一个新的开始。 终于有时间可以静下心来完整的看一遍Docker了，之前都是自己瞎玩，感觉差的不是一点两点，今天看了马哥的Docker容器第一章和第二章收获确实颇多。">
 <meta name="twitter:image" content="https://ws2.sinaimg.cn/large/006tNbRwgy1fw4p8ohd7qj31kw09an0o.jpg">
   
   
@@ -190,6 +190,7 @@ var _hmt = _hmt || [];
       
         <p>很久没写博客了，真的不好，今天就当是一个新的开始。</p>
 <p>终于有时间可以静下心来完整的看一遍Docker了，之前都是自己瞎玩，感觉差的不是一点两点，今天看了马哥的Docker容器第一章和第二章收获确实颇多。</p>
+<a id="more"></a>
 <h2 id="Docker的概念"><a href="#Docker的概念" class="headerlink" title="Docker的概念"></a>Docker的概念</h2><p>Docker也是一个虚拟化的技术，相较于传统的VirtualMachine，区别是VMs是需要一个完整的操作系统，无论你要运行单一的Nginx又或者是多个MySQL实例，你都需要先安装一个虚拟操作系统，然后在其之上搭建服务。另外，如果你需要多个服务进行隔离，互不干扰，那么就需要使用到隔离技术，隔离技术早就有了，不过这并不是Docker。<br>那么Docker是什么呢？Docker是一个把服务单一化，独立于操作系统的虚拟化技术。举个例子就能理解了：如果我要在Docker里运行Nginx，那么这个Docker里就只跑了一个Nginx，是只有一个Nginx，连PID=1 的那个init都没有，取而代之的是PID=1的Nginx服务。</p>
 <h2 id="Docker的组件"><a href="#Docker的组件" class="headerlink" title="Docker的组件"></a>Docker的组件</h2><p>Docker的组件有很多，不过今天就学了3种：Container（容器）、Image（镜像）、Registry（仓库）。</p>
 <p>什么区别呢？一个个说。</p>
@@ -477,11 +478,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">快捷键</a>
+                <a href="javascript:void(0)" class="js-tag color2">Python</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Python</a>
+                <a href="javascript:void(0)" class="js-tag color4">快捷键</a>
               </li>
              
               <li class="article-tag-list-item">
