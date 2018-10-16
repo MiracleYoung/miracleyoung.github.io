@@ -162,6 +162,152 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Docker容器基本操作" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/技术/Docker容器基本操作/">Docker容器基本操作</a>
+    </h1>
+  
+
+        
+        <a href="/技术/Docker容器基本操作/" class="archive-article-date">
+  	<time datetime="2018-10-16T09:59:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Docker-3-镜像管理基础</p>
+<h2 id="Docker-Image："><a href="#Docker-Image：" class="headerlink" title="Docker Image："></a>Docker Image：</h2><ul>
+<li>采用分层构建机制，最底层为bootfs，其之为rootfs<ul>
+<li>bootfs：用于系统引导的文件系统，包括bootloader和kernel，容器启动完成后会被卸载以节约内存资源</li>
+<li>rootfs：位于bootfs之上，表现为docker容器的根文件系统</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://ws3.sinaimg.cn/large/006tNbRwgy1fwa7wz17k4j30ou0hiq65.jpg" alt=""><br>￼<br>最底层的是父镜像，最上层的是“可读写”层，其下均为“只读”层<br>挂载方式：联合挂载</p>
+<ul>
+<li>依赖于Aufs，advanced multi-layered unification filesystem，高级多层统一文件系统</li>
+<li>用于为Linux文件系统实现“联合挂载”</li>
+<li>aufs是UnionFS的重新实现</li>
+<li>Ubuntu上使用的是aufs，CentOS7使用的是devicemapper</li>
+</ul>
+<h2 id="Registry"><a href="#Registry" class="headerlink" title="Registry"></a>Registry</h2><ul>
+<li>Repository<ul>
+<li>有特定的docker镜像的所有迭代版本组成的镜像仓库</li>
+<li>一个Resgistry可以存在多个Repository<ul>
+<li>Repository可分为“顶层仓库”和“用户仓库”</li>
+<li>用户仓库名称格式为：用户名/仓库名</li>
+</ul>
+</li>
+<li>每个仓库可以包含多个Tag，每个Tag对应一个镜像</li>
+</ul>
+</li>
+<li>Index<ul>
+<li>维护用户账户，镜像的校验以及公共命名空间</li>
+</ul>
+</li>
+</ul>
+<h2 id="Docker-Hub"><a href="#Docker-Hub" class="headerlink" title="Docker Hub"></a>Docker Hub</h2><ul>
+<li>Image Repository</li>
+<li>Automated Builds</li>
+<li>Webhooks</li>
+<li>Organizations</li>
+<li>Github and Bitbucket Integration</li>
+</ul>
+<p>在Github上写一个DockerFile，DockerHub可以自动监控DockerFile，并创建对应Docker<br>利用Webhooks去关联Github</p>
+<h2 id="docker-pull"><a href="#docker-pull" class="headerlink" title="docker pull"></a>docker pull</h2><p>docker pull quay.io/flannel:0.10.0-amd64</p>
+<h2 id="制作镜像"><a href="#制作镜像" class="headerlink" title="制作镜像"></a>制作镜像</h2><ul>
+<li>Dockerfile</li>
+<li>基于容器制作</li>
+<li>Docker Hub automated builds</li>
+</ul>
+<h3 id="基于容器制作镜像"><a href="#基于容器制作镜像" class="headerlink" title="基于容器制作镜像"></a>基于容器制作镜像</h3><ul>
+<li>进入容器进行修改</li>
+<li>提交新docker的改动：docker commit -p b1, -p pause，暂停container中的状态，b1就是container名字</li>
+<li>给刚刚提交的容器改动打标签：docker tag <container id=""> miracle/httpd:v0.1.0</container></li>
+<li>docker commit -a “Miracle <a href="mailto:&#109;&#x69;&#114;&#x61;&#x63;&#108;&#x65;&#x40;&#x71;&#113;&#46;&#99;&#111;&#x6d;" target="_blank" rel="noopener">&#109;&#x69;&#114;&#x61;&#x63;&#108;&#x65;&#x40;&#x71;&#113;&#46;&#99;&#111;&#x6d;</a>“ -c ‘CMD [“/bin/httpd”, “-f”, “-h”, “/data/html/“]’ -p b1 miracleyoung/httpd:v0.1</li>
+<li>docker push miracleYoung/httpd, miracleyoung 必须是账号名</li>
+<li>如果不是推送到DockerHub上去，就要使用：服务器地址/账号名/版本号</li>
+<li>使用阿里云的Docker，按照阿里云给出的Docker路径登陆</li>
+</ul>
+<h2 id="Docker导入导出"><a href="#Docker导入导出" class="headerlink" title="Docker导入导出"></a>Docker导入导出</h2><ul>
+<li>push 上去，pull下来</li>
+<li>把已有镜像压缩打包，然后上传到另一台服务器上<ul>
+<li>docker save -o myimages.gz miracleyoung/httpd:v0.1 busybox:latest</li>
+<li>docker load -I myimages.gz</li>
+</ul>
+</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/技术//" class="article-tag-list-link color3">技术</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/技术/Docker容器基本操作/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Docker介绍及基本使用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -987,96 +1133,6 @@ var _hmt = _hmt || [];
 
 
   
-    <article id="post-20180617" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/Diary/20180617/">Dairy 20180617</a>
-    </h1>
-  
-
-        
-        <a href="/Diary/20180617/" class="archive-article-date">
-  	<time datetime="2018-06-17T23:01:38.849Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li>学习《Python Data Structure》4.1-4.10。掌握了递归的基本用法。</li>
-<li>早上对媳妇有点不满，不太好，心胸开阔一些，与人为善一点。</li>
-</ul>
-        
-          <a class="article-more-a" href="/Diary/20180617/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Dairy</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Diary//" class="article-tag-list-link color1">Diary</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/Diary/20180617/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -1178,11 +1234,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Python</a>
+                <a href="javascript:void(0)" class="js-tag color4">快捷键</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">快捷键</a>
+                <a href="javascript:void(0)" class="js-tag color2">Python</a>
               </li>
              
               <li class="article-tag-list-item">
