@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/%E6%8A%80%E6%9C%AF/Docker%E5%AD%98%E5%82%A8%E5%8D%B7/</loc>
+    
+    <lastmod>2018-10-16T10:06:40.395Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/%E6%8A%80%E6%9C%AF/Docker%E5%AE%B9%E5%99%A8%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</loc>
     
-    <lastmod>2018-10-16T10:01:47.561Z</lastmod>
+    <lastmod>2018-10-16T10:03:03.930Z</lastmod>
     
   </url>
   
