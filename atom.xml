@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-16T10:06:40.395Z</updated>
+  <updated>2018-10-16T22:13:28.081Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>淘宝产品十年事读后感</title>
+    <link href="http://yoursite.com/uncategorized/%E6%B7%98%E5%AE%9D%E4%BA%A7%E5%93%81%E5%8D%81%E5%B9%B4%E4%BA%8B%E8%AF%BB%E5%90%8E%E6%84%9F/"/>
+    <id>http://yoursite.com/uncategorized/淘宝产品十年事读后感/</id>
+    <published>2018-10-16T22:11:40.000Z</published>
+    <updated>2018-10-16T22:13:28.081Z</updated>
+    
+    <content type="html"><![CDATA[<p>「淘宝十年产品事」</p><p>花了6个早上的时间，把这本书看完了，其实中间有2个周末都没有看，还是被事情耽搁了，不如说周末偷懒了。</p><p>这本书前前后后200页，讲述了淘宝从2003年到2013年这十年里发生的变化。从一个产品经理的角度来描述淘宝网的历史变迁，作为一个技术人，看这样子的书往往对自己是比较有帮助的，因为技术人往往把精力过多的集中在技术实现、创新、突破、优化上，而忽略了产品本身的服务对象：人，这也是为什么我会选择看他的原因。可能几年后、或者几个月后、亦或者此时，还有一本「淘宝十年技术事」在酝酿中，谁知道呢。</p><p>整本书并不像苏杰老师的神作「人人都是产品经理」1.0和2.0那般，讲述了很多的产品技巧、产品认知，而是以时间线为维度，按照历史的发展推演淘宝网这10年里主要产品的发展史、遇到的困难、如何通过产品思维来解决它。在本书的最后，也说明了本书例子的局限性。当然了最后一张同样花了大量的篇幅给一些零基础产品经理的建议也是非常有帮助的，只是我觉得和「人人都是产品经理」重叠了，所以就一扫而过了。</p><a id="more"></a><p>本书一共有十章，去头去尾后，还有八章，讲的东西都比较有代表性。第二章的「从“商品”说起」和第三章「淘宝就是导购」讲的就是淘宝网起初作为一个为了打败易趣（中国ebay的前生）而诞生的C2C导购网站，是如何一步步把自己的导购能力武装起来的。看完第二章，再去看看现在的淘宝和ebay，真的感叹ebay被淘汰的铁铮事实<br><img src="https://ws3.sinaimg.cn/large/006tNbRwgy1fwat2r94zoj31kw0tw4ev.jpg" alt=""><br><img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fwat2y6672j31kw15r4ff.jpg" alt=""><br>￼￼<br>淘宝网在导购方面可以说是花足了心思，一级二级三级类目，商品多了上千万了，又衍生出了属性的概念，属性还分子属性、属性值、类目属性等。我比较喜欢其中的一句话：“解决问题，或者说满足需求，通常有三种方法—提高现实，降低期望，转移需求，而常用的开发产品只是第一种，也是最费劲的一种方法。”那么延伸开来讲，第二种我的理解就是用产品化的思维降低原本100分的期望值为80分，从而让用户在80分这个层次感到满足。第三种转移需求无非就是把原本100分的事情搁置在一边，让用户来看看另一个80分的事情，注意这里是另一个80分，不是降维。但提高现实的做法是可以和用户保持长期良性发展的，后两种只能作为紧急应对方法，降低期望做多了会让用户产生抗药性，而转移需求更是把用户往外推了。</p><p>第四章「搜索的启示」对于很多技术人来说，搜索其实一直是个绕不开的问题，怎么把搜索做好从技术角度出发是有很多要说的，但如果遇到卡壳了，不如看看这一章，换个思维角度，用产品思维把这个事情解决了也不尝是一种成功。作为技术，要理解你所做的功能在页面上的位置、作用是非常重要的，而如果知道了现实，在实现上也一定能想到更好的方法。</p><p>第六章「下单之前」、第七章「交易之时」、第八章「付款之后」写的真是精彩。作为技术人，看到了淘宝网作为电商老大在这个领域的考虑，作为产品，从整体角度出发看“支付系统”和“订单系统”是非常用必要的，技术上考虑的是ACID、回滚做好、订单错误处理等，但从产品上看是拍下减库存还是付款减库存进行了一番博弈。最后给出的解决方案是针对不同的市场作出不同的调整，因为这本身就是一个两难的问题，无论哪一个都会遇到大量的矛盾。到底是亲买方还是亲卖方就看淘宝网定位是什么市场了。</p><p>最后，苏杰作为资深产品经理人，给出了自己对于产品经理的模型、练级攻略。作为外行人，看这本书收获还是颇多，需要实践去出真知。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;「淘宝十年产品事」&lt;/p&gt;
+&lt;p&gt;花了6个早上的时间，把这本书看完了，其实中间有2个周末都没有看，还是被事情耽搁了，不如说周末偷懒了。&lt;/p&gt;
+&lt;p&gt;这本书前前后后200页，讲述了淘宝从2003年到2013年这十年里发生的变化。从一个产品经理的角度来描述淘宝网的历史变迁，作为一个技术人，看这样子的书往往对自己是比较有帮助的，因为技术人往往把精力过多的集中在技术实现、创新、突破、优化上，而忽略了产品本身的服务对象：人，这也是为什么我会选择看他的原因。可能几年后、或者几个月后、亦或者此时，还有一本「淘宝十年技术事」在酝酿中，谁知道呢。&lt;/p&gt;
+&lt;p&gt;整本书并不像苏杰老师的神作「人人都是产品经理」1.0和2.0那般，讲述了很多的产品技巧、产品认知，而是以时间线为维度，按照历史的发展推演淘宝网这10年里主要产品的发展史、遇到的困难、如何通过产品思维来解决它。在本书的最后，也说明了本书例子的局限性。当然了最后一张同样花了大量的篇幅给一些零基础产品经理的建议也是非常有帮助的，只是我觉得和「人人都是产品经理」重叠了，所以就一扫而过了。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="读后感" scheme="http://yoursite.com/tags/%E8%AF%BB%E5%90%8E%E6%84%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>Docker存储卷</title>
@@ -48,7 +71,7 @@
     <published>2018-10-16T09:59:37.000Z</published>
     <updated>2018-10-16T10:03:03.930Z</updated>
     
-    <content type="html"><![CDATA[<p>Docker-镜像管理基础</p><h2 id="Docker-Image："><a href="#Docker-Image：" class="headerlink" title="Docker Image："></a>Docker Image：</h2><ul><li>采用分层构建机制，最底层为bootfs，其之为rootfs<ul><li>bootfs：用于系统引导的文件系统，包括bootloader和kernel，容器启动完成后会被卸载以节约内存资源</li><li>rootfs：位于bootfs之上，表现为docker容器的根文件系统</li></ul></li></ul><p><img src="https://ws3.sinaimg.cn/large/006tNbRwgy1fwa7wz17k4j30ou0hiq65.jpg" alt=""><br>￼<br><a id="more"></a></p><p>最底层的是父镜像，最上层的是“可读写”层，其下均为“只读”层<br>挂载方式：联合挂载</p><ul><li>依赖于Aufs，advanced multi-layered unification filesystem，高级多层统一文件系统</li><li>用于为Linux文件系统实现“联合挂载”</li><li>aufs是UnionFS的重新实现</li><li>Ubuntu上使用的是aufs，CentOS7使用的是devicemapper</li></ul><h2 id="Registry"><a href="#Registry" class="headerlink" title="Registry"></a>Registry</h2><ul><li>Repository<ul><li>有特定的docker镜像的所有迭代版本组成的镜像仓库</li><li>一个Resgistry可以存在多个Repository<ul><li>Repository可分为“顶层仓库”和“用户仓库”</li><li>用户仓库名称格式为：用户名/仓库名</li></ul></li><li>每个仓库可以包含多个Tag，每个Tag对应一个镜像</li></ul></li><li>Index<ul><li>维护用户账户，镜像的校验以及公共命名空间</li></ul></li></ul><h2 id="Docker-Hub"><a href="#Docker-Hub" class="headerlink" title="Docker Hub"></a>Docker Hub</h2><ul><li>Image Repository</li><li>Automated Builds</li><li>Webhooks</li><li>Organizations</li><li>Github and Bitbucket Integration</li></ul><p>在Github上写一个DockerFile，DockerHub可以自动监控DockerFile，并创建对应Docker<br>利用Webhooks去关联Github</p><h2 id="docker-pull"><a href="#docker-pull" class="headerlink" title="docker pull"></a>docker pull</h2><p>docker pull quay.io/flannel:0.10.0-amd64</p><h2 id="制作镜像"><a href="#制作镜像" class="headerlink" title="制作镜像"></a>制作镜像</h2><ul><li>Dockerfile</li><li>基于容器制作</li><li>Docker Hub automated builds</li></ul><h3 id="基于容器制作镜像"><a href="#基于容器制作镜像" class="headerlink" title="基于容器制作镜像"></a>基于容器制作镜像</h3><ul><li>进入容器进行修改</li><li>提交新docker的改动：docker commit -p b1, -p pause，暂停container中的状态，b1就是container名字</li><li>给刚刚提交的容器改动打标签：docker tag <container id=""> miracle/httpd:v0.1.0</container></li><li>docker commit -a “Miracle <a href="mailto:&#109;&#105;&#114;&#x61;&#99;&#108;&#101;&#x40;&#113;&#113;&#46;&#99;&#x6f;&#x6d;" target="_blank" rel="noopener">&#109;&#105;&#114;&#x61;&#99;&#108;&#101;&#x40;&#113;&#113;&#46;&#99;&#x6f;&#x6d;</a>“ -c ‘CMD [“/bin/httpd”, “-f”, “-h”, “/data/html/“]’ -p b1 miracleyoung/httpd:v0.1</li><li>docker push miracleYoung/httpd, miracleyoung 必须是账号名</li><li>如果不是推送到DockerHub上去，就要使用：服务器地址/账号名/版本号</li><li>使用阿里云的Docker，按照阿里云给出的Docker路径登陆</li></ul><h2 id="Docker导入导出"><a href="#Docker导入导出" class="headerlink" title="Docker导入导出"></a>Docker导入导出</h2><ul><li>push 上去，pull下来</li><li>把已有镜像压缩打包，然后上传到另一台服务器上<ul><li>docker save -o myimages.gz miracleyoung/httpd:v0.1 busybox:latest</li><li>docker load -I myimages.gz</li></ul></li></ul>]]></content>
+    <content type="html"><![CDATA[<p>Docker-镜像管理基础</p><h2 id="Docker-Image："><a href="#Docker-Image：" class="headerlink" title="Docker Image："></a>Docker Image：</h2><ul><li>采用分层构建机制，最底层为bootfs，其之为rootfs<ul><li>bootfs：用于系统引导的文件系统，包括bootloader和kernel，容器启动完成后会被卸载以节约内存资源</li><li>rootfs：位于bootfs之上，表现为docker容器的根文件系统</li></ul></li></ul><p><img src="https://ws3.sinaimg.cn/large/006tNbRwgy1fwa7wz17k4j30ou0hiq65.jpg" alt=""><br>￼<br><a id="more"></a></p><p>最底层的是父镜像，最上层的是“可读写”层，其下均为“只读”层<br>挂载方式：联合挂载</p><ul><li>依赖于Aufs，advanced multi-layered unification filesystem，高级多层统一文件系统</li><li>用于为Linux文件系统实现“联合挂载”</li><li>aufs是UnionFS的重新实现</li><li>Ubuntu上使用的是aufs，CentOS7使用的是devicemapper</li></ul><h2 id="Registry"><a href="#Registry" class="headerlink" title="Registry"></a>Registry</h2><ul><li>Repository<ul><li>有特定的docker镜像的所有迭代版本组成的镜像仓库</li><li>一个Resgistry可以存在多个Repository<ul><li>Repository可分为“顶层仓库”和“用户仓库”</li><li>用户仓库名称格式为：用户名/仓库名</li></ul></li><li>每个仓库可以包含多个Tag，每个Tag对应一个镜像</li></ul></li><li>Index<ul><li>维护用户账户，镜像的校验以及公共命名空间</li></ul></li></ul><h2 id="Docker-Hub"><a href="#Docker-Hub" class="headerlink" title="Docker Hub"></a>Docker Hub</h2><ul><li>Image Repository</li><li>Automated Builds</li><li>Webhooks</li><li>Organizations</li><li>Github and Bitbucket Integration</li></ul><p>在Github上写一个DockerFile，DockerHub可以自动监控DockerFile，并创建对应Docker<br>利用Webhooks去关联Github</p><h2 id="docker-pull"><a href="#docker-pull" class="headerlink" title="docker pull"></a>docker pull</h2><p>docker pull quay.io/flannel:0.10.0-amd64</p><h2 id="制作镜像"><a href="#制作镜像" class="headerlink" title="制作镜像"></a>制作镜像</h2><ul><li>Dockerfile</li><li>基于容器制作</li><li>Docker Hub automated builds</li></ul><h3 id="基于容器制作镜像"><a href="#基于容器制作镜像" class="headerlink" title="基于容器制作镜像"></a>基于容器制作镜像</h3><ul><li>进入容器进行修改</li><li>提交新docker的改动：docker commit -p b1, -p pause，暂停container中的状态，b1就是container名字</li><li>给刚刚提交的容器改动打标签：docker tag <container id=""> miracle/httpd:v0.1.0</container></li><li>docker commit -a “Miracle <a href="mailto:&#109;&#105;&#114;&#x61;&#99;&#108;&#x65;&#x40;&#x71;&#113;&#x2e;&#99;&#111;&#109;" target="_blank" rel="noopener">&#109;&#105;&#114;&#x61;&#99;&#108;&#x65;&#x40;&#x71;&#113;&#x2e;&#99;&#111;&#109;</a>“ -c ‘CMD [“/bin/httpd”, “-f”, “-h”, “/data/html/“]’ -p b1 miracleyoung/httpd:v0.1</li><li>docker push miracleYoung/httpd, miracleyoung 必须是账号名</li><li>如果不是推送到DockerHub上去，就要使用：服务器地址/账号名/版本号</li><li>使用阿里云的Docker，按照阿里云给出的Docker路径登陆</li></ul><h2 id="Docker导入导出"><a href="#Docker导入导出" class="headerlink" title="Docker导入导出"></a>Docker导入导出</h2><ul><li>push 上去，pull下来</li><li>把已有镜像压缩打包，然后上传到另一台服务器上<ul><li>docker save -o myimages.gz miracleyoung/httpd:v0.1 busybox:latest</li><li>docker load -I myimages.gz</li></ul></li></ul>]]></content>
     
     <summary type="html">
     
