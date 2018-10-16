@@ -8,19 +8,19 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Docker容器基本操作 | Miracle Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Docker-3-镜像管理基础 Docker Image： 采用分层构建机制，最底层为bootfs，其之为rootfs bootfs：用于系统引导的文件系统，包括bootloader和kernel，容器启动完成后会被卸载以节约内存资源 rootfs：位于bootfs之上，表现为docker容器的根文件系统    ￼最底层的是父镜像，最上层的是“可读写”层，其下均为“只读”层挂载方式：联合挂载  依">
+  <meta name="description" content="Docker-3-镜像管理基础 Docker Image： 采用分层构建机制，最底层为bootfs，其之为rootfs bootfs：用于系统引导的文件系统，包括bootloader和kernel，容器启动完成后会被卸载以节约内存资源 rootfs：位于bootfs之上，表现为docker容器的根文件系统    ￼">
 <meta name="keywords" content="技术">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Docker容器基本操作">
 <meta property="og:url" content="http://yoursite.com/技术/Docker容器基本操作/index.html">
 <meta property="og:site_name" content="Miracle Blog">
-<meta property="og:description" content="Docker-3-镜像管理基础 Docker Image： 采用分层构建机制，最底层为bootfs，其之为rootfs bootfs：用于系统引导的文件系统，包括bootloader和kernel，容器启动完成后会被卸载以节约内存资源 rootfs：位于bootfs之上，表现为docker容器的根文件系统    ￼最底层的是父镜像，最上层的是“可读写”层，其下均为“只读”层挂载方式：联合挂载  依">
+<meta property="og:description" content="Docker-3-镜像管理基础 Docker Image： 采用分层构建机制，最底层为bootfs，其之为rootfs bootfs：用于系统引导的文件系统，包括bootloader和kernel，容器启动完成后会被卸载以节约内存资源 rootfs：位于bootfs之上，表现为docker容器的根文件系统    ￼">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://ws3.sinaimg.cn/large/006tNbRwgy1fwa7wz17k4j30ou0hiq65.jpg">
-<meta property="og:updated_time" content="2018-10-16T10:01:17.022Z">
+<meta property="og:updated_time" content="2018-10-16T10:01:47.561Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Docker容器基本操作">
-<meta name="twitter:description" content="Docker-3-镜像管理基础 Docker Image： 采用分层构建机制，最底层为bootfs，其之为rootfs bootfs：用于系统引导的文件系统，包括bootloader和kernel，容器启动完成后会被卸载以节约内存资源 rootfs：位于bootfs之上，表现为docker容器的根文件系统    ￼最底层的是父镜像，最上层的是“可读写”层，其下均为“只读”层挂载方式：联合挂载  依">
+<meta name="twitter:description" content="Docker-3-镜像管理基础 Docker Image： 采用分层构建机制，最底层为bootfs，其之为rootfs bootfs：用于系统引导的文件系统，包括bootloader和kernel，容器启动完成后会被卸载以节约内存资源 rootfs：位于bootfs之上，表现为docker容器的根文件系统    ￼">
 <meta name="twitter:image" content="https://ws3.sinaimg.cn/large/006tNbRwgy1fwa7wz17k4j30ou0hiq65.jpg">
   
   
@@ -191,7 +191,8 @@ var _hmt = _hmt || [];
 </ul>
 </li>
 </ul>
-<p><img src="https://ws3.sinaimg.cn/large/006tNbRwgy1fwa7wz17k4j30ou0hiq65.jpg" alt=""><br>￼<br>最底层的是父镜像，最上层的是“可读写”层，其下均为“只读”层<br>挂载方式：联合挂载</p>
+<p><img src="https://ws3.sinaimg.cn/large/006tNbRwgy1fwa7wz17k4j30ou0hiq65.jpg" alt=""><br>￼<br><a id="more"></a></p>
+<p>最底层的是父镜像，最上层的是“可读写”层，其下均为“只读”层<br>挂载方式：联合挂载</p>
 <ul>
 <li>依赖于Aufs，advanced multi-layered unification filesystem，高级多层统一文件系统</li>
 <li>用于为Linux文件系统实现“联合挂载”</li>
@@ -232,7 +233,7 @@ var _hmt = _hmt || [];
 <li>进入容器进行修改</li>
 <li>提交新docker的改动：docker commit -p b1, -p pause，暂停container中的状态，b1就是container名字</li>
 <li>给刚刚提交的容器改动打标签：docker tag <container id=""> miracle/httpd:v0.1.0</container></li>
-<li>docker commit -a “Miracle <a href="mailto:&#109;&#x69;&#114;&#x61;&#x63;&#108;&#x65;&#x40;&#x71;&#113;&#46;&#99;&#111;&#x6d;" target="_blank" rel="noopener">&#109;&#x69;&#114;&#x61;&#x63;&#108;&#x65;&#x40;&#x71;&#113;&#46;&#99;&#111;&#x6d;</a>“ -c ‘CMD [“/bin/httpd”, “-f”, “-h”, “/data/html/“]’ -p b1 miracleyoung/httpd:v0.1</li>
+<li>docker commit -a “Miracle <a href="mailto:&#109;&#x69;&#114;&#97;&#x63;&#x6c;&#x65;&#64;&#x71;&#x71;&#46;&#x63;&#111;&#109;" target="_blank" rel="noopener">&#109;&#x69;&#114;&#97;&#x63;&#x6c;&#x65;&#64;&#x71;&#x71;&#46;&#x63;&#111;&#109;</a>“ -c ‘CMD [“/bin/httpd”, “-f”, “-h”, “/data/html/“]’ -p b1 miracleyoung/httpd:v0.1</li>
 <li>docker push miracleYoung/httpd, miracleyoung 必须是账号名</li>
 <li>如果不是推送到DockerHub上去，就要使用：服务器地址/账号名/版本号</li>
 <li>使用阿里云的Docker，按照阿里云给出的Docker路径登陆</li>
