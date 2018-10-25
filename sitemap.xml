@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/%E6%8A%80%E6%9C%AF/k8s-3-%E5%88%9D%E5%A7%8B%E5%8C%96k8s%E9%9B%86%E7%BE%A4/</loc>
+    
+    <lastmod>2018-10-25T22:02:38.546Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/%E6%8A%80%E6%9C%AF/k8s-2-%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/</loc>
+    
+    <lastmod>2018-10-25T22:01:13.718Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/%E6%8A%80%E6%9C%AF/k8s-1-%E6%9E%B6%E6%9E%84%E5%9F%BA%E7%A1%80/</loc>
+    
+    <lastmod>2018-10-25T21:58:19.331Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/%E6%8A%80%E6%9C%AF/Dockerfile/</loc>
     
     <lastmod>2018-10-17T15:16:29.312Z</lastmod>

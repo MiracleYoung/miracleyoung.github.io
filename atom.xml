@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-17T15:16:29.312Z</updated>
+  <updated>2018-10-25T22:02:38.546Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,105 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>k8s-3-初始化k8s集群</title>
+    <link href="http://yoursite.com/%E6%8A%80%E6%9C%AF/k8s-3-%E5%88%9D%E5%A7%8B%E5%8C%96k8s%E9%9B%86%E7%BE%A4/"/>
+    <id>http://yoursite.com/技术/k8s-3-初始化k8s集群/</id>
+    <published>2018-10-25T22:01:33.000Z</published>
+    <updated>2018-10-25T22:02:38.546Z</updated>
+    
+    <content type="html"><![CDATA[<p>k8s-3-初始化k8s集群<br>￼<br>￼<img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fwl7bytqsnj30sy0ma426.jpg" alt=""><br><a id="more"></a></p><ul><li>手动安装，部署在系统之上<br><img src="https://ws1.sinaimg.cn/large/006tNbRwgy1fwl7c4fe6qj30rs0eigo1.jpg" alt=""></li><li>kubeadm：把k8s自己也部署成容器<ul><li>kubelet：运行pod的基础组件</li><li>docker：运行docker</li></ul></li><li>master上运行：API Server、etcd、controller-manager、scheduler，都运行为Pod的方式</li><li>各组件都需要flannel</li><li>master，nodes：安装kubelet，kubeadm，docker</li><li>master：kubeadm initi</li><li><p>nodes：kubeadm join</p></li><li><p>kubelet, kubeadm, kuernetes 安装</p><ul><li>yum-config-manager –add-repo <a href="https://download.docker.com/linux/centos/docker-ce.repo" target="_blank" rel="noopener">https://download.docker.com/linux/centos/docker-ce.repo</a></li><li><p>wget -P /etc/yum.repos.d/ <a href="https://mirrors.aliyun.com/kubernetes/yum/doc/yum-key.gpg" target="_blank" rel="noopener">https://mirrors.aliyun.com/kubernetes/yum/doc/yum-key.gpg</a> </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[root@centos7-1 yum.repos.d]# cat kubernetes.repo</span><br><span class="line">[kubernetes]</span><br><span class="line">name=Kunernetes Repo</span><br><span class="line">baseurl=https://mirrors.aliyun.com/kubernetes/yum/repos/kubernetes-el7-x86_64/</span><br><span class="line">gpgcheck=1</span><br><span class="line">gpgkey=https://mirrors.aliyun.com/kubernetes/yum/doc/yum-key.gpg</span><br><span class="line">enabled=1</span><br></pre></td></tr></table></figure></li><li><p>wget <a href="https://mirrors.aliyun.com/kubernetes/yum/doc/rpm-package-key.gpg" target="_blank" rel="noopener">https://mirrors.aliyun.com/kubernetes/yum/doc/rpm-package-key.gpg</a></p></li><li>yum install kubelet kubeadm kubectl</li></ul></li><li>vim /usr/lib/systemd/system/docker.service<ul><li>Environment=”HTTPS_PROXY=<a href="http://www.ik8s.io:10080”" target="_blank" rel="noopener">http://www.ik8s.io:10080”</a></li><li>Environment=“NO_PROXY=127.0.0.0/8,172.17.0.0/16”</li></ul></li><li>systemctl daemon-reload</li><li>systemctl restart docker </li><li>cat /proc/sys/net/bridge/bridge-nf-call-ip6tables 确认是1</li><li><p>cat /proc/sys/net/bridge/bridge-nf-call-iptables 确认是1</p></li><li><p>初始化k8s：kubeadm init –pod-network-cidr=10.244.0.0/16 –service-cidr=10.96.0.0/12 –ignore-preflight-errors=Swap</p></li><li>run cmd：<ul><li>mkdir -p $HOME/.kube</li><li>sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config</li><li>sudo chown $(id -u):$(id -g) $HOME/.kube/config</li></ul></li><li>加入其他节点，join nodes<ul><li>kubeadm join 172.16.163.129:6443 –token qzkzzn.kcros8j24l7adsi5 –discovery-token-ca-cert-hash sha256:84de83f916b04644f38f893246b9daf064967871ae3114726df2ea8fad63e7d8 –ignore-preflight-errors=Swap</li></ul></li><li><p>修改配置文件：/etc/sysconfig/kubelet</p><ul><li>KUBELET_EXTRA_ARGS=”–fail-swap-on=false”</li></ul></li><li><p>kubectl get cs</p></li><li>kubectl get nodes</li></ul><ul><li><p>部署flannel</p><ul><li>kubectl apply -f <a href="https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml" target="_blank" rel="noopener">https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml</a></li><li>通过kubectl get pods -n kube-system 查看pod 情况</li><li>kubectl get ns，查看kube的命名空间，一共有3个，default，kube-public，kube-system</li></ul></li><li><p>从节点部署，只需要kubeadm, kubelet, docker-ce</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;k8s-3-初始化k8s集群&lt;br&gt;￼&lt;br&gt;￼&lt;img src=&quot;https://ws4.sinaimg.cn/large/006tNbRwgy1fwl7bytqsnj30sy0ma426.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="k8s" scheme="http://yoursite.com/tags/k8s/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>k8s-2-基础概念</title>
+    <link href="http://yoursite.com/%E6%8A%80%E6%9C%AF/k8s-2-%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/"/>
+    <id>http://yoursite.com/技术/k8s-2-基础概念/</id>
+    <published>2018-10-25T21:58:41.000Z</published>
+    <updated>2018-10-25T22:01:13.718Z</updated>
+    
+    <content type="html"><![CDATA[<p>k8s-2-基础概念</p><ul><li>master/node<ul><li>master：API Server，Scheduler，Controller-Manager</li><li>node：kubelet，docker，…</li></ul></li><li>Pod，Label，Label Selector<ul><li>Label：key=value</li><li>Label Selector：</li></ul></li><li>Pod：<ul><li>自主式Pod</li><li>控制器管理的Pod<ul><li>有生命周期的调度对象<ul><li>ReplicationController</li><li>ReplicaSet</li><li>Deployment</li><li>StatefulSet</li><li>DaemonSet</li><li>Job，Cronjob</li><li>HPA，HorizontalPodAutoscaler</li></ul></li></ul></li></ul></li><li>Services：<ul><li>AddOns：附件</li></ul></li></ul><a id="more"></a><p><img src="https://ws3.sinaimg.cn/large/006tNbRwgy1fwl791i7hzj30nm0eo75f.jpg" alt=""></p><ul><li>CNI<ul><li>flannel：网络配置</li><li>calico：网络配置，网络配置</li><li>canel：calico提供网络策略，flannel提供网络</li></ul></li></ul><p><img src="https://ws2.sinaimg.cn/large/006tNbRwgy1fwl7933zk4j31060guwhl.jpg" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;k8s-2-基础概念&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;master/node&lt;ul&gt;
+&lt;li&gt;master：API Server，Scheduler，Controller-Manager&lt;/li&gt;
+&lt;li&gt;node：kubelet，docker，…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Pod，Label，Label Selector&lt;ul&gt;
+&lt;li&gt;Label：key=value&lt;/li&gt;
+&lt;li&gt;Label Selector：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Pod：&lt;ul&gt;
+&lt;li&gt;自主式Pod&lt;/li&gt;
+&lt;li&gt;控制器管理的Pod&lt;ul&gt;
+&lt;li&gt;有生命周期的调度对象&lt;ul&gt;
+&lt;li&gt;ReplicationController&lt;/li&gt;
+&lt;li&gt;ReplicaSet&lt;/li&gt;
+&lt;li&gt;Deployment&lt;/li&gt;
+&lt;li&gt;StatefulSet&lt;/li&gt;
+&lt;li&gt;DaemonSet&lt;/li&gt;
+&lt;li&gt;Job，Cronjob&lt;/li&gt;
+&lt;li&gt;HPA，HorizontalPodAutoscaler&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Services：&lt;ul&gt;
+&lt;li&gt;AddOns：附件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="k8s" scheme="http://yoursite.com/tags/k8s/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>k8s-1-架构基础</title>
+    <link href="http://yoursite.com/%E6%8A%80%E6%9C%AF/k8s-1-%E6%9E%B6%E6%9E%84%E5%9F%BA%E7%A1%80/"/>
+    <id>http://yoursite.com/技术/k8s-1-架构基础/</id>
+    <published>2018-10-25T21:56:13.000Z</published>
+    <updated>2018-10-25T21:58:19.331Z</updated>
+    
+    <content type="html"><![CDATA[<p>k8s-1-架构概述<br>￼<br><img src="https://ws1.sinaimg.cn/large/006tNbRwgy1fwl77kow4gj31aa0ua470.jpg" alt=""><br><a id="more"></a></p><ul><li>根据容器最低需求来调度决定使用哪个Node节点</li><li>k8s 二级调度<ul><li>先做预估筛选：哪些节点符合</li><li>优选：取决于优选算法</li></ul></li><li>API Server</li><li>Scheduler</li><li>Controller：监控容器是否健康，需要在master本地周期性探测</li><li>Controller Manager：监控每一个控制器的健康<ul><li>为了Controller Manager 健康，可以做冗余</li></ul></li></ul><p>￼<img src="https://ws2.sinaimg.cn/large/006tNbRwgy1fwl77lpl7lj311i0p4tej.jpg" alt=""></p><ul><li>通过标签选择器（selector），根据过滤选择条件的选择器</li><li>master/node<ul><li>master：API Server，Scheduler，Controller-Manager</li><li>node：kebulet（集群代理，执行master分发的任务）</li></ul></li><li>Pod，调度原子单元</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;k8s-1-架构概述&lt;br&gt;￼&lt;br&gt;&lt;img src=&quot;https://ws1.sinaimg.cn/large/006tNbRwgy1fwl77kow4gj31aa0ua470.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="k8s" scheme="http://yoursite.com/tags/k8s/"/>
+    
+  </entry>
   
   <entry>
     <title>Dockerfile</title>
@@ -96,7 +195,7 @@
     <published>2018-10-16T09:59:37.000Z</published>
     <updated>2018-10-16T10:03:03.930Z</updated>
     
-    <content type="html"><![CDATA[<p>Docker-镜像管理基础</p><h2 id="Docker-Image："><a href="#Docker-Image：" class="headerlink" title="Docker Image："></a>Docker Image：</h2><ul><li>采用分层构建机制，最底层为bootfs，其之为rootfs<ul><li>bootfs：用于系统引导的文件系统，包括bootloader和kernel，容器启动完成后会被卸载以节约内存资源</li><li>rootfs：位于bootfs之上，表现为docker容器的根文件系统</li></ul></li></ul><p><img src="https://ws3.sinaimg.cn/large/006tNbRwgy1fwa7wz17k4j30ou0hiq65.jpg" alt=""><br>￼<br><a id="more"></a></p><p>最底层的是父镜像，最上层的是“可读写”层，其下均为“只读”层<br>挂载方式：联合挂载</p><ul><li>依赖于Aufs，advanced multi-layered unification filesystem，高级多层统一文件系统</li><li>用于为Linux文件系统实现“联合挂载”</li><li>aufs是UnionFS的重新实现</li><li>Ubuntu上使用的是aufs，CentOS7使用的是devicemapper</li></ul><h2 id="Registry"><a href="#Registry" class="headerlink" title="Registry"></a>Registry</h2><ul><li>Repository<ul><li>有特定的docker镜像的所有迭代版本组成的镜像仓库</li><li>一个Resgistry可以存在多个Repository<ul><li>Repository可分为“顶层仓库”和“用户仓库”</li><li>用户仓库名称格式为：用户名/仓库名</li></ul></li><li>每个仓库可以包含多个Tag，每个Tag对应一个镜像</li></ul></li><li>Index<ul><li>维护用户账户，镜像的校验以及公共命名空间</li></ul></li></ul><h2 id="Docker-Hub"><a href="#Docker-Hub" class="headerlink" title="Docker Hub"></a>Docker Hub</h2><ul><li>Image Repository</li><li>Automated Builds</li><li>Webhooks</li><li>Organizations</li><li>Github and Bitbucket Integration</li></ul><p>在Github上写一个DockerFile，DockerHub可以自动监控DockerFile，并创建对应Docker<br>利用Webhooks去关联Github</p><h2 id="docker-pull"><a href="#docker-pull" class="headerlink" title="docker pull"></a>docker pull</h2><p>docker pull quay.io/flannel:0.10.0-amd64</p><h2 id="制作镜像"><a href="#制作镜像" class="headerlink" title="制作镜像"></a>制作镜像</h2><ul><li>Dockerfile</li><li>基于容器制作</li><li>Docker Hub automated builds</li></ul><h3 id="基于容器制作镜像"><a href="#基于容器制作镜像" class="headerlink" title="基于容器制作镜像"></a>基于容器制作镜像</h3><ul><li>进入容器进行修改</li><li>提交新docker的改动：docker commit -p b1, -p pause，暂停container中的状态，b1就是container名字</li><li>给刚刚提交的容器改动打标签：docker tag <container id=""> miracle/httpd:v0.1.0</container></li><li>docker commit -a “Miracle <a href="mailto:&#109;&#x69;&#114;&#x61;&#99;&#108;&#x65;&#64;&#113;&#x71;&#x2e;&#x63;&#x6f;&#109;" target="_blank" rel="noopener">&#109;&#x69;&#114;&#x61;&#99;&#108;&#x65;&#64;&#113;&#x71;&#x2e;&#x63;&#x6f;&#109;</a>“ -c ‘CMD [“/bin/httpd”, “-f”, “-h”, “/data/html/“]’ -p b1 miracleyoung/httpd:v0.1</li><li>docker push miracleYoung/httpd, miracleyoung 必须是账号名</li><li>如果不是推送到DockerHub上去，就要使用：服务器地址/账号名/版本号</li><li>使用阿里云的Docker，按照阿里云给出的Docker路径登陆</li></ul><h2 id="Docker导入导出"><a href="#Docker导入导出" class="headerlink" title="Docker导入导出"></a>Docker导入导出</h2><ul><li>push 上去，pull下来</li><li>把已有镜像压缩打包，然后上传到另一台服务器上<ul><li>docker save -o myimages.gz miracleyoung/httpd:v0.1 busybox:latest</li><li>docker load -I myimages.gz</li></ul></li></ul>]]></content>
+    <content type="html"><![CDATA[<p>Docker-镜像管理基础</p><h2 id="Docker-Image："><a href="#Docker-Image：" class="headerlink" title="Docker Image："></a>Docker Image：</h2><ul><li>采用分层构建机制，最底层为bootfs，其之为rootfs<ul><li>bootfs：用于系统引导的文件系统，包括bootloader和kernel，容器启动完成后会被卸载以节约内存资源</li><li>rootfs：位于bootfs之上，表现为docker容器的根文件系统</li></ul></li></ul><p><img src="https://ws3.sinaimg.cn/large/006tNbRwgy1fwa7wz17k4j30ou0hiq65.jpg" alt=""><br>￼<br><a id="more"></a></p><p>最底层的是父镜像，最上层的是“可读写”层，其下均为“只读”层<br>挂载方式：联合挂载</p><ul><li>依赖于Aufs，advanced multi-layered unification filesystem，高级多层统一文件系统</li><li>用于为Linux文件系统实现“联合挂载”</li><li>aufs是UnionFS的重新实现</li><li>Ubuntu上使用的是aufs，CentOS7使用的是devicemapper</li></ul><h2 id="Registry"><a href="#Registry" class="headerlink" title="Registry"></a>Registry</h2><ul><li>Repository<ul><li>有特定的docker镜像的所有迭代版本组成的镜像仓库</li><li>一个Resgistry可以存在多个Repository<ul><li>Repository可分为“顶层仓库”和“用户仓库”</li><li>用户仓库名称格式为：用户名/仓库名</li></ul></li><li>每个仓库可以包含多个Tag，每个Tag对应一个镜像</li></ul></li><li>Index<ul><li>维护用户账户，镜像的校验以及公共命名空间</li></ul></li></ul><h2 id="Docker-Hub"><a href="#Docker-Hub" class="headerlink" title="Docker Hub"></a>Docker Hub</h2><ul><li>Image Repository</li><li>Automated Builds</li><li>Webhooks</li><li>Organizations</li><li>Github and Bitbucket Integration</li></ul><p>在Github上写一个DockerFile，DockerHub可以自动监控DockerFile，并创建对应Docker<br>利用Webhooks去关联Github</p><h2 id="docker-pull"><a href="#docker-pull" class="headerlink" title="docker pull"></a>docker pull</h2><p>docker pull quay.io/flannel:0.10.0-amd64</p><h2 id="制作镜像"><a href="#制作镜像" class="headerlink" title="制作镜像"></a>制作镜像</h2><ul><li>Dockerfile</li><li>基于容器制作</li><li>Docker Hub automated builds</li></ul><h3 id="基于容器制作镜像"><a href="#基于容器制作镜像" class="headerlink" title="基于容器制作镜像"></a>基于容器制作镜像</h3><ul><li>进入容器进行修改</li><li>提交新docker的改动：docker commit -p b1, -p pause，暂停container中的状态，b1就是container名字</li><li>给刚刚提交的容器改动打标签：docker tag <container id=""> miracle/httpd:v0.1.0</container></li><li>docker commit -a “Miracle <a href="mailto:&#x6d;&#105;&#114;&#x61;&#99;&#x6c;&#x65;&#x40;&#113;&#113;&#x2e;&#99;&#111;&#109;" target="_blank" rel="noopener">&#x6d;&#105;&#114;&#x61;&#99;&#x6c;&#x65;&#x40;&#113;&#113;&#x2e;&#99;&#111;&#109;</a>“ -c ‘CMD [“/bin/httpd”, “-f”, “-h”, “/data/html/“]’ -p b1 miracleyoung/httpd:v0.1</li><li>docker push miracleYoung/httpd, miracleyoung 必须是账号名</li><li>如果不是推送到DockerHub上去，就要使用：服务器地址/账号名/版本号</li><li>使用阿里云的Docker，按照阿里云给出的Docker路径登陆</li></ul><h2 id="Docker导入导出"><a href="#Docker导入导出" class="headerlink" title="Docker导入导出"></a>Docker导入导出</h2><ul><li>push 上去，pull下来</li><li>把已有镜像压缩打包，然后上传到另一台服务器上<ul><li>docker save -o myimages.gz miracleyoung/httpd:v0.1 busybox:latest</li><li>docker load -I myimages.gz</li></ul></li></ul>]]></content>
     
     <summary type="html">
     
@@ -456,34 +555,6 @@
       &lt;ul&gt;
 &lt;li&gt;上午看了PEP8规范、一些python的文章&lt;/li&gt;
 &lt;li&gt;下午继续看python的文章，对于super继承有了新的认识，对于反射器理解的还不是很透彻，明天继续&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="Diary" scheme="http://yoursite.com/categories/Diary/"/>
-    
-    
-      <category term="Dairy" scheme="http://yoursite.com/tags/Dairy/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Dairy 20180605</title>
-    <link href="http://yoursite.com/Diary/20180605/"/>
-    <id>http://yoursite.com/Diary/20180605/</id>
-    <published>2018-06-05T21:56:08.874Z</published>
-    <updated>2018-07-05T15:04:46.189Z</updated>
-    
-    <content type="html"><![CDATA[<ul><li>上午去浦发信用卡中心面试了，太早过去，期间一直刷手机，主要还是因为没有联系上人，<strong>所以下次一定要保留hr联系方式</strong>，避免早到、临时有事无法联系。之后和部门老大聊，似乎没有聊什么技术，后面得知面的是个应用运维岗位，有点不太匹配，<strong>以后面试前，一定要对岗位职责定性，免去徒劳的奔波</strong>。</li><li>12点吃饭，睡到1:45，2点开始学习，这个时间可以缩短，以后 <strong>吃饭到1点，回来手机消息扫一下，就可以直接休息了</strong>，不用刷到1:15，影响后续休息。</li><li>下午看了GIL和多线程多进程，这一段时间利用率还算大，尽量避免他人干扰。</li><li>之后开始看celery。并没有开始写，已经安装完环境，明天就可以写代码了。</li><li>Docker/k8s 这个是现在的技术趋势，需要去看，可以调整一下，把celery放一下，把docker看掉。本周的重点，<strong>docker</strong>。</li></ul><a id="more"></a><h2 id="Tech"><a href="#Tech" class="headerlink" title="Tech"></a>Tech</h2><h3 id="GIL"><a href="#GIL" class="headerlink" title="GIL"></a>GIL</h3><ul><li>python 的GIL是针对Cython的，python的默认解释器，使用c语言实现。由于大多数的第三方扩展都依赖于GIL，所以Cython也就被使用最多。</li><li>GIL的存在是为了给线程分配执行权限，只有拿到GIL锁的线程才能够执行逻辑。</li><li>Cython解释器对GIL的分配做了一些限制，每个线程能够执行的指令次数默认为100，则被迫交出GIL，在最新的python3.6中，已经修复为刚交出GIL的线程不会再争夺到GIL。以保证尽可能多的线程执行过。</li></ul><h3 id="多线程和多进程"><a href="#多线程和多进程" class="headerlink" title="多线程和多进程"></a>多线程和多进程</h3><ul><li>多线程作用于IO密集型，多进程作用于CPU密集型</li><li>IO密集型操作，瓶颈在IO，所以指令集下达后，线程会有hang住的情况，此时采用多线程，可以有效的利用其他线程的并发。</li><li>CPU密集型操作，瓶颈在CPU，需要大量计算，类似数据矩阵计算、循环遍历等，这个时候线程并没有等待，反倒是不断的切换线程所带来的开销更大了。</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;上午去浦发信用卡中心面试了，太早过去，期间一直刷手机，主要还是因为没有联系上人，&lt;strong&gt;所以下次一定要保留hr联系方式&lt;/strong&gt;，避免早到、临时有事无法联系。之后和部门老大聊，似乎没有聊什么技术，后面得知面的是个应用运维岗位，有点不太匹配，&lt;strong&gt;以后面试前，一定要对岗位职责定性，免去徒劳的奔波&lt;/strong&gt;。&lt;/li&gt;
-&lt;li&gt;12点吃饭，睡到1:45，2点开始学习，这个时间可以缩短，以后 &lt;strong&gt;吃饭到1点，回来手机消息扫一下，就可以直接休息了&lt;/strong&gt;，不用刷到1:15，影响后续休息。&lt;/li&gt;
-&lt;li&gt;下午看了GIL和多线程多进程，这一段时间利用率还算大，尽量避免他人干扰。&lt;/li&gt;
-&lt;li&gt;之后开始看celery。并没有开始写，已经安装完环境，明天就可以写代码了。&lt;/li&gt;
-&lt;li&gt;Docker/k8s 这个是现在的技术趋势，需要去看，可以调整一下，把celery放一下，把docker看掉。本周的重点，&lt;strong&gt;docker&lt;/strong&gt;。&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>

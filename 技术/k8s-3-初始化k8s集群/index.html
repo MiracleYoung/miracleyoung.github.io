@@ -6,27 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Docker介绍及基本使用 | Miracle Blog</title>
+  <title>k8s-3-初始化k8s集群 | Miracle Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="很久没写博客了，真的不好，今天就当是一个新的开始。 终于有时间可以静下心来完整的看一遍Docker了，之前都是自己瞎玩，感觉差的不是一点两点，今天看了马哥的Docker容器第一章和第二章收获确实颇多。">
-<meta name="keywords" content="技术">
+  <meta name="description" content="k8s-3-初始化k8s集群￼￼">
+<meta name="keywords" content="k8s">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Docker介绍及基本使用">
-<meta property="og:url" content="http://yoursite.com/技术/Docker介绍及基本使用/index.html">
+<meta property="og:title" content="k8s-3-初始化k8s集群">
+<meta property="og:url" content="http://yoursite.com/技术/k8s-3-初始化k8s集群/index.html">
 <meta property="og:site_name" content="Miracle Blog">
-<meta property="og:description" content="很久没写博客了，真的不好，今天就当是一个新的开始。 终于有时间可以静下心来完整的看一遍Docker了，之前都是自己瞎玩，感觉差的不是一点两点，今天看了马哥的Docker容器第一章和第二章收获确实颇多。">
+<meta property="og:description" content="k8s-3-初始化k8s集群￼￼">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNbRwgy1fw4p8ohd7qj31kw09an0o.jpg">
-<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNbRwgy1fw4pbpiwznj31460i8wgz.jpg">
-<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNbRwgy1fw4p8ohd7qj31kw09an0o.jpg">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNbRwgy1fw4plrxnukj30w40h0myr.jpg">
-<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNbRwgy1fw4pltr77aj314s0xatda.jpg">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNbRwgy1fw4plv5oldj30rm10ogq8.jpg">
-<meta property="og:updated_time" content="2018-10-11T15:42:54.955Z">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNbRwgy1fwl7bytqsnj30sy0ma426.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNbRwgy1fwl7c4fe6qj30rs0eigo1.jpg">
+<meta property="og:updated_time" content="2018-10-25T22:02:38.546Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Docker介绍及基本使用">
-<meta name="twitter:description" content="很久没写博客了，真的不好，今天就当是一个新的开始。 终于有时间可以静下心来完整的看一遍Docker了，之前都是自己瞎玩，感觉差的不是一点两点，今天看了马哥的Docker容器第一章和第二章收获确实颇多。">
-<meta name="twitter:image" content="https://ws2.sinaimg.cn/large/006tNbRwgy1fw4p8ohd7qj31kw09an0o.jpg">
+<meta name="twitter:title" content="k8s-3-初始化k8s集群">
+<meta name="twitter:description" content="k8s-3-初始化k8s集群￼￼">
+<meta name="twitter:image" content="https://ws4.sinaimg.cn/large/006tNbRwgy1fwl7bytqsnj30sy0ma426.jpg">
   
   
     <link rel="icon" href="/assets/img/favicon.ico">
@@ -168,43 +164,93 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Docker介绍及基本使用" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-k8s-3-初始化k8s集群" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Docker介绍及基本使用
+      k8s-3-初始化k8s集群
     </h1>
   
 
         
-        <a href="/技术/Docker介绍及基本使用/" class="archive-article-date">
-  	<time datetime="2018-10-11T15:03:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-11</time>
+        <a href="/技术/k8s-3-初始化k8s集群/" class="archive-article-date">
+  	<time datetime="2018-10-25T22:01:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-26</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>很久没写博客了，真的不好，今天就当是一个新的开始。</p>
-<p>终于有时间可以静下心来完整的看一遍Docker了，之前都是自己瞎玩，感觉差的不是一点两点，今天看了马哥的Docker容器第一章和第二章收获确实颇多。</p>
-<a id="more"></a>
-<h2 id="Docker的概念"><a href="#Docker的概念" class="headerlink" title="Docker的概念"></a>Docker的概念</h2><p>Docker也是一个虚拟化的技术，相较于传统的VirtualMachine，区别是VMs是需要一个完整的操作系统，无论你要运行单一的Nginx又或者是多个MySQL实例，你都需要先安装一个虚拟操作系统，然后在其之上搭建服务。另外，如果你需要多个服务进行隔离，互不干扰，那么就需要使用到隔离技术，隔离技术早就有了，不过这并不是Docker。<br>那么Docker是什么呢？Docker是一个把服务单一化，独立于操作系统的虚拟化技术。举个例子就能理解了：如果我要在Docker里运行Nginx，那么这个Docker里就只跑了一个Nginx，是只有一个Nginx，连PID=1 的那个init都没有，取而代之的是PID=1的Nginx服务。</p>
-<h2 id="Docker的组件"><a href="#Docker的组件" class="headerlink" title="Docker的组件"></a>Docker的组件</h2><p>Docker的组件有很多，不过今天就学了3种：Container（容器）、Image（镜像）、Registry（仓库）。</p>
-<p>什么区别呢？一个个说。</p>
-<p>仓库存储着大量的镜像，每一个镜像都是一个类，而容器就是一个个具体的实例，可以理解为是实例化了。就好像你安装了MySQL，但没有运行MySQL实例，这个时候服务是不存在的，这就是镜像，镜像只是一个静态的东西，需要你去实例化镜像，实例化出来的东西就叫容器。</p>
-<p>仓库里有许多的镜像，例如：Nginx、MySQL等。一个Nginx服务包含很多个版本，相同的版本还有stable、release、alpine等，所以一个仓库下包含着许多的镜像。<br>为了区分他们，命名规则上做出了规范：从仓库中获取一个具体的镜像，需要这么称呼他：<code>nginx:1.14-alpine</code>，这样就能找到唯一的镜像了。</p>
-<h2 id="Docker的基本操作"><a href="#Docker的基本操作" class="headerlink" title="Docker的基本操作"></a>Docker的基本操作</h2><p>Docker发展到现在，已经相当不错了，在命令行里也已经组件化了，我是Mac，所以直接安装的Docker for Mac。安装完后就可以直接使用了。</p>
+        <p>k8s-3-初始化k8s集群<br>￼<br>￼<img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fwl7bytqsnj30sy0ma426.jpg" alt=""><br><a id="more"></a></p>
 <ul>
-<li><code>docker pull nginx:1.14-alpine</code>：从仓库中拉取一个nginx，版本号是1.14-alpine</li>
-<li><code>docker run --name web1 -d nginx:1.14-alpine</code>： -d 参数代表使用daemon的方式启动docker，–name 表示指定该container的名字，最后的nginx:1.14-alpine代表这个容器所使用的镜像名字。<br>我们可以通过 <code>docker container ps</code> 来查看当前docker的运行状况<br><img src="https://ws2.sinaimg.cn/large/006tNbRwgy1fw4p8ohd7qj31kw09an0o.jpg" alt="docker container ps"></li>
-<li><code>docker exec -it web1 /bin/sh</code>：exec 表示进入docker container里面去，-it的意思就是交互式操作，web1就是进入到名字叫web1的container里去，最后的/bin/sh 就是以什么样的方式进入，如果你是一个echo，就直接输出了<br><img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fw4pbpiwznj31460i8wgz.jpg" alt="docker exec -it web1 /bin/sh"><br><img src="https://ws2.sinaimg.cn/large/006tNbRwgy1fw4p8ohd7qj31kw09an0o.jpg" alt="docker exec -it web1 echo 1"></li>
+<li>手动安装，部署在系统之上<br><img src="https://ws1.sinaimg.cn/large/006tNbRwgy1fwl7c4fe6qj30rs0eigo1.jpg" alt=""></li>
+<li>kubeadm：把k8s自己也部署成容器<ul>
+<li>kubelet：运行pod的基础组件</li>
+<li>docker：运行docker</li>
 </ul>
-<p>但是在这里会有一个坑，也是我希望记录下来的，在Mac中，1024端口以下是需要sudo权限的，而linux没有，所以在视频中，启动了nginx后，是可以在外部使用内网ip:port的方式访问到这个nginx的，而我却不行，之后查阅文档，发现run是有一个端口映射参数的，加上去就好了。<br><code>docker run -p 8080:80 --name web1 -d nginx:1.14-alpine</code>：这里，把container中的80端口映射到我本地的8080端口。</p>
-<p>通过命令<code>docker inspect web1</code> 查看web1容器的详细情况：<br><img src="https://ws1.sinaimg.cn/large/006tNbRwgy1fw4plrxnukj30w40h0myr.jpg" alt="docker inspect web1"><br><img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fw4pltr77aj314s0xatda.jpg" alt="docker inspect web1"></p>
-<p>这样子，就可以本地访问到了。<br><img src="https://ws1.sinaimg.cn/large/006tNbRwgy1fw4plv5oldj30rm10ogq8.jpg" alt="docker run -p 8080:80 --name web1 -d nginx:1.14-alpine"></p>
+</li>
+<li>master上运行：API Server、etcd、controller-manager、scheduler，都运行为Pod的方式</li>
+<li>各组件都需要flannel</li>
+<li>master，nodes：安装kubelet，kubeadm，docker</li>
+<li>master：kubeadm initi</li>
+<li><p>nodes：kubeadm join</p>
+</li>
+<li><p>kubelet, kubeadm, kuernetes 安装</p>
+<ul>
+<li>yum-config-manager –add-repo <a href="https://download.docker.com/linux/centos/docker-ce.repo" target="_blank" rel="noopener">https://download.docker.com/linux/centos/docker-ce.repo</a></li>
+<li><p>wget -P /etc/yum.repos.d/ <a href="https://mirrors.aliyun.com/kubernetes/yum/doc/yum-key.gpg" target="_blank" rel="noopener">https://mirrors.aliyun.com/kubernetes/yum/doc/yum-key.gpg</a> </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[root@centos7-1 yum.repos.d]# cat kubernetes.repo</span><br><span class="line">[kubernetes]</span><br><span class="line">name=Kunernetes Repo</span><br><span class="line">baseurl=https://mirrors.aliyun.com/kubernetes/yum/repos/kubernetes-el7-x86_64/</span><br><span class="line">gpgcheck=1</span><br><span class="line">gpgkey=https://mirrors.aliyun.com/kubernetes/yum/doc/yum-key.gpg</span><br><span class="line">enabled=1</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>wget <a href="https://mirrors.aliyun.com/kubernetes/yum/doc/rpm-package-key.gpg" target="_blank" rel="noopener">https://mirrors.aliyun.com/kubernetes/yum/doc/rpm-package-key.gpg</a></p>
+</li>
+<li>yum install kubelet kubeadm kubectl</li>
+</ul>
+</li>
+<li>vim /usr/lib/systemd/system/docker.service<ul>
+<li>Environment=”HTTPS_PROXY=<a href="http://www.ik8s.io:10080”" target="_blank" rel="noopener">http://www.ik8s.io:10080”</a></li>
+<li>Environment=“NO_PROXY=127.0.0.0/8,172.17.0.0/16”</li>
+</ul>
+</li>
+<li>systemctl daemon-reload</li>
+<li>systemctl restart docker </li>
+<li>cat /proc/sys/net/bridge/bridge-nf-call-ip6tables 确认是1</li>
+<li><p>cat /proc/sys/net/bridge/bridge-nf-call-iptables 确认是1</p>
+</li>
+<li><p>初始化k8s：kubeadm init –pod-network-cidr=10.244.0.0/16 –service-cidr=10.96.0.0/12 –ignore-preflight-errors=Swap</p>
+</li>
+<li>run cmd：<ul>
+<li>mkdir -p $HOME/.kube</li>
+<li>sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config</li>
+<li>sudo chown $(id -u):$(id -g) $HOME/.kube/config</li>
+</ul>
+</li>
+<li>加入其他节点，join nodes<ul>
+<li>kubeadm join 172.16.163.129:6443 –token qzkzzn.kcros8j24l7adsi5 –discovery-token-ca-cert-hash sha256:84de83f916b04644f38f893246b9daf064967871ae3114726df2ea8fad63e7d8 –ignore-preflight-errors=Swap</li>
+</ul>
+</li>
+<li><p>修改配置文件：/etc/sysconfig/kubelet</p>
+<ul>
+<li>KUBELET_EXTRA_ARGS=”–fail-swap-on=false”</li>
+</ul>
+</li>
+<li><p>kubectl get cs</p>
+</li>
+<li>kubectl get nodes</li>
+</ul>
+<ul>
+<li><p>部署flannel</p>
+<ul>
+<li>kubectl apply -f <a href="https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml" target="_blank" rel="noopener">https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml</a></li>
+<li>通过kubectl get pods -n kube-system 查看pod 情况</li>
+<li>kubectl get ns，查看kube的命名空间，一共有3个，default，kube-public，kube-system</li>
+</ul>
+</li>
+<li><p>从节点部署，只需要kubeadm, kubelet, docker-ce</p>
+</li>
+</ul>
 
       
 
@@ -249,7 +295,7 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">k8s</a>
         		</li>
       		
 		</ul>
@@ -316,7 +362,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/技术/Docker介绍及基本使用/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/技术/k8s-3-初始化k8s集群/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -330,18 +376,9 @@ var _hmt = _hmt || [];
   
 <nav id="article-nav">
   
-    <a href="/技术/Docker容器基本操作/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Docker容器基本操作
-        
-      </div>
-    </a>
   
-  
-    <a href="/杂谈/平安金融程序员打架/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">平安金融程序员打架</div>
+    <a href="/技术/k8s-2-基础概念/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">k8s-2-基础概念</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -380,7 +417,7 @@ var _hmt = _hmt || [];
 <script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "http://yoursite.com/技术/Docker介绍及基本使用/",
+  id: "http://yoursite.com/技术/k8s-3-初始化k8s集群/",
   owner: 'miracleyoung',
   repo: 'miracleyoung.github.io',
   oauth: {
